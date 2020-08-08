@@ -1,0 +1,133 @@
+\documentclass[11pt]{report}  
+
+%%%%%%%% PREÁMBULO %%%%%%%%%%%%
+\title{Trabajo Terminal}
+\usepackage[spanish]{babel} %Indica que escribiermos en español
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
+\usepackage{graphicx} % Incluir imágenes en LaTeX
+\usepackage{color} % Para colorear texto
+\usepackage{subfigure} % subfiguras
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
+\usepackage{sidecap} % Para poner el texto de las imágenes al lado
+\sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\usepackage{anysize} % Para personalizar el ancho de  los márgenes
+
+\marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
+
+\usepackage{appendix}
+\renewcommand{\appendixname}{Apéndices}
+\renewcommand{\appendixtocname}{Apéndices}
+\renewcommand{\appendixpagename}{Apéndices} 
+
+% Para que las referencias sean hipervínculos a las figuras o ecuaciones y
+% aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
+%\usepackage{hyperref} 
+% Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\footnotesize TT 2019-A104} %encabezado izquierda
+\fancyhead[R]{\footnotesize IPN - ESCOM}   % dereecha
+\fancyfoot[R]{\footnotesize Trabajo Terminal II}  % Pie derecha
+\fancyfoot[C]{\thepage}  % centro
+\fancyfoot[L]{\footnotesize Ingeniar\'ia en Sistemas Computacionales}  %izquierda
+\renewcommand{\footrulewidth}{0.4pt}
+
+
+\usepackage{listings} % Para usar código fuente
+\definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
+\definecolor{gray}{rgb}{0.5,0.5,0.5} 
+% configuración para el lenguaje que queramos utilizar
+\lstset{language=Matlab,
+   keywords={break,case,catch,continue,else,elseif,end,for,function,
+      global,if,otherwise,persistent,return,switch,try,while},
+   basicstyle=\ttfamily,
+   keywordstyle=\color{blue},
+   commentstyle=\color{red},
+   stringstyle=\color{dkgreen},
+   numbers=left,
+   numberstyle=\tiny\color{gray},
+   stepnumber=1,
+   numbersep=10pt,
+   backgroundcolor=\color{white},
+   tabsize=4,
+   showspaces=false,
+   showstringspaces=false}
+
+\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
+%en español
+
+\title{Plantilla para Trabajo Terminal de ESCOM}
+%%%%%%%% TERMINA PREÁMBULO %%%%%%%%%%%%
+
+\begin{document}
+
+\include{portada.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESUMEN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}												
+\begin{minipage}{0.48\textwidth} \begin{flushleft}
+%\includegraphics[scale = 0.09]{images/ipn}
+\end{flushleft}\end{minipage}
+\begin{minipage}{0.48\textwidth} \begin{flushright}
+%\includegraphics[scale = 0.08]{images/escom}
+\end{flushright}\end{minipage}
+
+El presente proyecto consiste en desarrollar un software que está enfocado a la enseñanza, aprendizaje y demostración del cuerpo humano mediante Realidad Virtual (R.V.), el mismo que puede ser usado en la Escuela Superior de Medicina (E.S.M.) y Escuela Nacional de Medicina y Homeopatía (E.N.M. y H.) en las áreas de Morfología y Anatomía como soporte para la enseñanza de las áreas antes mencionadas. 
+\\
+De esta manera se espera aumentar el número de herramientas que poseen los estudiantes de medicina y reforzar el aprendizaje del alumnado con tecnología actual, escalable, con mayor disponibilidad y facilidad de uso, en contraste con el uso de cadáveres humanos.
+\\[4cm]
+\textbf{Palabras clave} - Animación por Computadora, Gráficos por Computadora, Realidad Virtual, Estudio Multimedia
+\\[2cm]
+\textbf{Presenta:}
+\\[0.5cm]
+Almendarez Perdomo Rodrigo
+\\[2cm]
+\textbf{Directores}
+\\[0.5cm]
+M. en Ing. Moscoso Malagón Yosafat
+\\
+M. en C. Saucedo Delgado Rafael Norman
+\\
+\end{abstract}							
+
+\newpage	
+\section*{Advertencia}
+\vfill
+\textit{“Este documento contiene información desarrollada por la Escuela Superior de Cómputo del Instituto Politécnico Nacional, a partir de datos y documentos con derecho de propiedad y, por lo tanto, su uso quedará restringido a las aplicaciones que explícitamente se convengan.”
+\\
+La aplicación no convenida exime a la escuela su responsabilidad técnica y da lugar a las consecuencias legales que para tal efecto se determinen. 
+\\
+Información adicional sobre este reporte técnico podrá obtenerse en: 
+\\
+La Subdirección Académica de la Escuela Superior de Cómputo del Instituto Politécnico Nacional, situada en Av. Juan de Dios Bátiz s/n Teléfono: 57296000, extensión 52000.}
+\vfill
+
+\newpage
+\section*{Agradecimientos}
+\vfill
+En primer lugar quiero agradecer a mis directores, M. en Ing. Moscoso Malagón Yosafat y el M. en C. Saucedo Delgado Rafael Norman, quienes con sus conocimientos y apoyo me guiaron a través de cada una de las etapas de este proyecto para alcanzar los resultados que buscaba, después de todo el  desarrollo de un Trabajo Terminal es el pináculo de  la formación de un alumno en la carrera de Ingeniería en Sistemas Computacionales, el cual requiere de mucha dedicación y conocimientos para llegar a su desarrollo exitoso.
+\\
+\newline
+Especialmente quiero agradecer al profesor Alfredo Rangel Guzmán por sus enseñanzas sobre la vida y el actuar del mundo actual, y el recibir su apoyo incondicional.
+También quiero agradecer a la Escuela Superior de Cómputo por brindarme todos los recursos, herramientas y conocimientos que fueron necesarios para llevar a cabo el proceso de investigación y desarrollo del Trabajo Terminal. No hubiese podido arribar a estos resultados de no haber sido por su incondicional ayuda.
+\\
+\newline
+Por último, quiero agradecer a todos mis compañeros y amigos, principalmente a los que me han acompañado desde el inicio de mi carrera y a mi familia y pareja, por apoyarme aún cuando mis ánimos decaían. En especial, quiero hacer mención de mis padres, que siempre estuvieron ahí para darme palabras de apoyo y un abrazo reconfortante para renovar energías y continuar trabajando para finalizar este camino.
+\\
+\newline
+Muchas gracias a todos.
+\\
+\paragraph{Rodrigo Almendarez Perdomo}
+\vfill
+
+\tableofcontents
+
+\include{capitulo1.tex}
+
+\end{document}
