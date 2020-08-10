@@ -1,0 +1,144 @@
+\chapter{Introducción}
+
+\section{Introducción}
+
+Este documento es el reporte técnico final del trabajo terminal titulado 
+“Sistema de realidad virtual del cuerpo humano para el estudio del sistema digestivo” 
+con número de registro TT: 2019-A104.
+
+En el presente capítulo se habla del problema identificado, por qué se considera como tal 
+y cómo es que se ayudó a resolver el problema planteado mediante la ingeniería 
+en sistemas computacionales.
+También se menciona que se obtiene al concluir con este trabajo terminal, 
+tales como el prototipo del sistema.
+
+En el capítulo \textbf{II Análisis} se mostrarán todos los diagramas y documentos generados al analizar y generar un diseño del sistema que se estará desarrollando. Aquí se encuentra la arquitectura general del sistema, y los modelos gráficos de apoyo presentados en el Análisis Estructurado Moderno.\\
+\newline
+En el capítulo \textbf{III Diseño} se describe el trabajo generado en el desarrollo del documento hasta el mes de mayo de 2020 para TT2.\\
+\newline
+En el capítulo \textbf{IV Verificación y Pruebas} se muestran pruebas hechas sobre las implementaciones del sistema siguiendo un guión para la prueba.
+ \newline\\
+En el capítulo \textbf{V Conclusión} se muestran los resultados obtenidos y experiencias para mejorar el proceso, así como la vertiente para continuar con el trabajo y las conclusiones del integrante.
+\newline\\
+Finalmente, se encuentran las referencias de todos los recursos empleados para dar soporte y estructura a este Trabajo Terminal, y en los apéndices se anexan elementos extra que dan información más detallada sobre lo que aquí fue realizado.\\
+\vfill 
+
+\newpage
+
+\section{Detecci\'oon del problema} 
+
+Durante 2019 se entrevistó al Dr. Rios Macias jefe del área de morfología de la Escuela Superior de Medicina del Instituto Politécnico Nacional y comentó que “los medios que se utilizan para el estudio del cuerpo humano principalmente son medios impresos tradicionales, así como el uso de cuerpos para su disección y análisis posterior”. El uso de cuerpos para su disección tiene un alto costo que incluye el mantenimiento del cuerpo en las instalaciones, el mantenimiento de las instalaciones, y la inhumación de los cuerpos.
+\\
+\newline
+\section{Propuesta de Solución}
+
+Se elaboró un sistema de realidad virtual del sistema digestivo del cuerpo humano que permite interactuar con modelos tridimensionales. La intención es sentar las bases para un sistema de apoyo al aprendizaje que sea más práctico \cite{moore1995learning}, sin sustituir a ningún método de estudio tradicional.
+\\
+\section{Justificación}
+\label{just}
+
+El sistema tiene los siguientes beneficios para docentes y alumnos: 
+\begin{itemize}
+\item Fuentes confiables. Se usaron textos médicos y sitios web especializados
+\item Uso de realidad virtual\cite{norton1994integrating}.
+\end{itemize}
+
+El sistema es un ejemplo de cómo se pueden actualizar las herramientas educativas, como las que se pueden encontrar en Statista \cite{web1}, y que representan un mercado de aproximadamente 18.8 mil millones de dólares para el año 2020. Además, Nielsen\cite{web2} muestra los datos sobre la expectativa de adopción de la realidad virtual y aumentada en diferentes continentes, como se muestra el Figura 1 y 2.
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 0.7\textwidth]{source/images/image2.png}
+\captionof{figure}{\label{fig:graph1}Disposición de los consumidores a nivel mundial para usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años (2020 -2021)}
+\end{center} 
+\end{figure}
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[width = 0.7\textwidth]{source/images/image10.png}
+\captionof{figure}{\label{fig:graph2}Disposición de los consumidores a nivel mundial para no  usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años(2020 -2021)}
+\end{center} 
+\end{figure}
+
+A medida que crece el consumo de software, 
+multimedia y videojuegos se aumentará la disponibilidad de sistemas 
+como el que se propone en este trabajo terminal.
+
+\section{Objetivos del Trabajo}
+Objetivo es analizar, diseñar, desarrollar y probar un sistema de demostración que utiliza la tecnología de Realidad Virtual, para ofrecer una experiencia orientada al estudio de la anatomía y morfología del cuerpo humano, específicamente del sistema digestivo.
+
+\subsection{Objetivos Específicos}
+Para lograr el objetivo se identificaron los siguientes objetivos específicos:
+\begin{itemize}
+\item Investigar en fuentes confiables sobre el sistema digestivo.
+\item Analizar, diseñar, desarrollar y probar un entorno de Realidad Virtual para la interacción.
+\end{itemize}
+
+\section{Población Objetivo}
+De acuerdo a un estudio de Ericsson ConsumerLabe\cite{web3}, en el año 2020 un tercio de los consumidores serán usuarios de Realidad Virtual. Ya desde 2017 se había explorado el nivel de interés de los consumidores en Realidad Virtual\cite{web4} con su potencial de reunir gente de todo el mundo y crear un experiencia más profunda, personalizada y enriquecida.\\
+\newline
+De todos los interesados en la Realidad Virtual se toma a los estudiantes de educación superior del área de medicina, particularmente a 180\cite{ofi1}  estudiantes de la Escuela Superior de Medicina del Instituto Politécnico Nacional de entre 18 y 24 años de edad. Además se espera que los usuarios objetivo tengan las siguientes características\cite{web5} específicamente:\\
+\newline
+\begin{itemize}
+\item Disposición para el aprendizaje con nuevas tecnologías de la información.
+\item Conocimientos sólidos en las áreas de biología, física, química; y en forma idónea conocimientos básicos de las etimologías grecolatinas e idioma inglés, que le facilitarán la comprensión y dominio de los conceptos utilizados en las asignaturas básicas y clínicas.
+\item No ser propenso a sufrir cinetosis.
+\end{itemize}
+
+\section{Productos logrados}
+Se logró crear un software (demostración), de una experiencia demostrativa en realidad virtual. El sistema muestra características y elementos del sistema digestivo y permite la participación de un usuario utilizando una misma computadora de forma local. Se usan los controles Oculus Touch ® así como el visor de Realidad Virtual Oculus Rift ®. También se redactó el presente reporte técnico.
+
+\section{Definiciones}
+Estas son las definiciones más importantes para el presente trabajo terminal
+
+\subsection{Realidad Virtual}
+Algunos autores definen así la Realidad Virtual.\\
+\newline
+\textit{“La realidad virtual (RV) es una simulación tridimensional generada o asistida comúnmente por computadora de algún aspecto del mundo real o ficticio, en el cual el usuario tiene la sensación de pertenecer a ese ambiente sintético o interactuar con él”}\cite{web6}\\ 
+\textbf{Corrado Padila Érica}\\
+\newline
+“Realidad Virtual: gráficos 3D en entornos inmersivos que usan I/O
+artefactos como guantes, cascos, etc. en busca de mayores grados de iteración
+con el ambiente virtual”\cite{web7}\\ 
+Lozano Miguel, Calderón\\
+\newline
+"Realidad Virtual es una forma en que los seres humanos puedan
+visualizar, manipular e interactuar con las computadoras y datos extremadamente
+complejos".\cite{web8}\\
+Isdale, Jerry\\
+\newline
+“Un sistema interactivo capaz de crear una simulación que implique a varios de los sentidos del ser humano, generados por una computadora, explorable, visualizable y manipulable en tiempo real; este bajo la forma de imágenes y sonidos, estos, dando la sensación de presencia en el entorno generado”\cite{web9}\\
+Levis, Diego\\
+\newline
+Esta última ha sido la definición que se ha tomado para el desarrollo del proyecto del trabajo terminal, asimismo se puede concluir que todos los autores coinciden en que la realidad virtual es un mundo simulado en el que el usuario puede interactuar en tiempo real por medio
+de dispositivos o computadoras que logran un efecto artificial e inmersivo en el que se pueden manipular objetos.\\
+\newline
+
+\subsection{Producto Multimedia}
+Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar en productos estáticos como carteles, logotipos, folletos, modelos estáticos 3D, etc., y productos basados en el tiempo. [ 13, 14 ].\\ 
+\newline
+Los productos multimedia interactivos son aplicaciones de software que contienen productos multimedia [ 15 ] (es decir, aplicaciones basadas en eventos como juegos, aplicaciones web basadas en multimedia y materiales de aprendizaje multimedia basados en interactividad).  El diagrama 1 a continuación ilustra los tipos de productos multimedia.\\
+\newline
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 0.5\textwidth]{source/images/image52.png}
+ 		\captionof{figure}{\label{fig:diag1}Tipos de productos multimedia} 
+	\end{center} 
+\end{figure}
+
+Un sistema multimedia se puede analizar desde tres puntos:
+\begin{itemize}
+\item La vista externa. La forma en que el usuario interactúa con el producto.
+\item Flujo de acciones. El orden en que se muestran los marcos de los modelos a los usuarios. [ 16, 17 ].
+\item  Los roles de los usuarios. La interacción con productos multimedia.
+\end{itemize} 
+La Tabla 1 resume los tipos de productos multimedia y sus características.
+
+%https://www.tablesgenerator.com/
+
+Para este trabajo, el sistema que se propone es una producto interactivo.
+%\begin{figure}[H]
+%	\begin{center}
+% 		\includegraphics[width = 0.5\textwidth]{images/ipn.png}
+% 		\captionof{figure}{\label{fig:IPN}Descripción de la %imagen} 
+%	\end{center} 
+%\end{figure}
