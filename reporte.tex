@@ -1,31 +1,39 @@
 \documentclass[11pt]{report}  
+\title{Trabajo Terminal}
 \usepackage[spanish]{babel} %Indica que escribiermos en español
-\usepackage[utf8]{inputenc} %codificación: utf8  
+\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
 \usepackage{graphicx} % Incluir imágenes en LaTeX
 \usepackage{color} % Para colorear texto
 \usepackage{subfigure} % subfiguras
-\usepackage{float} %usar [H] en las figuras para que se queden donde queramos
-\usepackage{capt-of} % usar etiquetas fuera de elementos flotantes
+\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
+% queden donde queramos
+\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
+% (etiquetas de figuras)
 \usepackage{sidecap} % Para poner el texto de las imágenes al lado
-\usepackage{caption} % Para poder quitar numeracion de figuras
-\usepackage{anysize} % Para personalizar el ancho de  los márgenes
-\usepackage{appendix}
-\usepackage{fancyhdr} 
-\usepackage{listings} % Para usar código fuente
-\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
-
 \sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
-\captionsetup{labelfont={color=gray},font={color=gray}} %Cambia el color 
+\usepackage{caption} % Para poder quitar numeracion de figuras
+\captionsetup{labelfont={color=gray},font={color=gray}} %Cambia el color de los pies de foto/tabla
+\usepackage{anysize} % Para personalizar el ancho de  los márgenes
 \marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
 
+%Paquetes para tablas%
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{longtable}
+%https://www.tablesgenerator.com/
+
+\usepackage{appendix}
 \renewcommand{\appendixname}{Apéndices}
 \renewcommand{\appendixtocname}{Apéndices}
 \renewcommand{\appendixpagename}{Apéndices} 
 
 % Para que las referencias sean hipervínculos a las figuras o ecuaciones y
 % aparezcan en color
+\usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
 %\usepackage{hyperref} 
 % Para agregar encabezado y pie de página
+\usepackage{fancyhdr} 
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\footnotesize TT 2019-A104} %encabezado izquierda
@@ -34,28 +42,13 @@
 \fancyfoot[C]{\thepage}  % centro
 \fancyfoot[L]{\footnotesize Ingeniar\'ia en Sistemas Computacionales}  %izquierda
 \renewcommand{\footrulewidth}{0.4pt}
-\newcommand{\sen}{\operatorname{\sen}}	% Definimos el comando \sen para el seno
 
+\usepackage{listings} % Para usar código fuente
 \definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
 \definecolor{gray}{rgb}{0.5,0.5,0.5} 
 % configuración para el lenguaje que queramos utilizar
-\lstset{language=Matlab,
-   keywords={break,case,catch,continue,else,elseif,end,for,function,
-      global,if,otherwise,persistent,return,switch,try,while},
-   basicstyle=\ttfamily,
-   keywordstyle=\color{blue},
-   commentstyle=\color{red},
-   stringstyle=\color{dkgreen},
-   numbers=left,
-   numberstyle=\tiny\color{gray},
-   stepnumber=1,
-   numbersep=10pt,
-   backgroundcolor=\color{white},
-   tabsize=4,
-   showspaces=false,
-   showstringspaces=false}
 
-\title{Trabajo Terminal}
+\title{Trabajo Terminal de ESCOM}
 
 \begin{document}
 

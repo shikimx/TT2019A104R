@@ -1,17 +1,14 @@
-\chapter{Introducción}
+\begin{center}
+\chapter{Introducci\'on}
+\end{center}
 
-\section{Introducción}
-
-Este documento es el reporte técnico final del trabajo terminal titulado 
-“Sistema de realidad virtual del cuerpo humano para el estudio del sistema digestivo” 
-con número de registro TT: 2019-A104.
-
-En el presente capítulo se habla del problema identificado, por qué se considera como tal 
-y cómo es que se ayudó a resolver el problema planteado mediante la ingeniería 
-en sistemas computacionales.
-También se menciona que se obtiene al concluir con este trabajo terminal, 
-tales como el prototipo del sistema.
-
+\newpage 
+\section*{Introducci\'on}
+\vfill
+Este documento es el reporte técnico final del trabajo terminal titulado “Sistema de realidad virtual del cuerpo humano para el estudio del sistema digestivo” con número de registro TT: 2019-A104.\\
+\newline
+En el presente capítulo se habla del problema identificado, por qué se considera como tal y cómo es que se ayudó a resolver el problema planteado mediante la ingeniería en sistemas computacionales. También se menciona que se obtiene al concluir con este trabajo terminal, tales como el prototipo del sistema.\\
+\newline
 En el capítulo \textbf{II Análisis} se mostrarán todos los diagramas y documentos generados al analizar y generar un diseño del sistema que se estará desarrollando. Aquí se encuentra la arquitectura general del sistema, y los modelos gráficos de apoyo presentados en el Análisis Estructurado Moderno.\\
 \newline
 En el capítulo \textbf{III Diseño} se describe el trabajo generado en el desarrollo del documento hasta el mes de mayo de 2020 para TT2.\\
@@ -25,7 +22,7 @@ Finalmente, se encuentran las referencias de todos los recursos empleados para d
 
 \newpage
 
-\section{Detecci\'oon del problema} 
+\section{Detecci\'on del problema} 
 
 Durante 2019 se entrevistó al Dr. Rios Macias jefe del área de morfología de la Escuela Superior de Medicina del Instituto Politécnico Nacional y comentó que “los medios que se utilizan para el estudio del cuerpo humano principalmente son medios impresos tradicionales, así como el uso de cuerpos para su disección y análisis posterior”. El uso de cuerpos para su disección tiene un alto costo que incluye el mantenimiento del cuerpo en las instalaciones, el mantenimiento de las instalaciones, y la inhumación de los cuerpos.
 \\
@@ -34,6 +31,7 @@ Durante 2019 se entrevistó al Dr. Rios Macias jefe del área de morfología de 
 
 Se elaboró un sistema de realidad virtual del sistema digestivo del cuerpo humano que permite interactuar con modelos tridimensionales. La intención es sentar las bases para un sistema de apoyo al aprendizaje que sea más práctico \cite{moore1995learning}, sin sustituir a ningún método de estudio tradicional.
 \\
+\newline
 \section{Justificación}
 \label{just}
 
@@ -46,28 +44,29 @@ El sistema tiene los siguientes beneficios para docentes y alumnos:
 El sistema es un ejemplo de cómo se pueden actualizar las herramientas educativas, como las que se pueden encontrar en Statista \cite{web1}, y que representan un mercado de aproximadamente 18.8 mil millones de dólares para el año 2020. Además, Nielsen\cite{web2} muestra los datos sobre la expectativa de adopción de la realidad virtual y aumentada en diferentes continentes, como se muestra el Figura 1 y 2.
 
 \begin{figure}[H]
-\begin{center}
-\includegraphics[width = 0.7\textwidth]{source/images/image2.png}
-\captionof{figure}{\label{fig:graph1}Disposición de los consumidores a nivel mundial para usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años (2020 -2021)}
-\end{center} 
+	\begin{center}
+ 		\includegraphics[width = 0.7\textwidth]{source/images/image2.png}
+ 		\captionof{figure}{\label{fig:graph1}Disposición de los consumidores a nivel mundial para usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años (2020 -2021)}
+	\end{center} 
 \end{figure}
 
 \begin{figure}[H]
-\begin{center}
-\includegraphics[width = 0.7\textwidth]{source/images/image10.png}
-\captionof{figure}{\label{fig:graph2}Disposición de los consumidores a nivel mundial para no  usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años(2020 -2021)}
-\end{center} 
+	\begin{center}
+ 		\includegraphics[width = 0.7\textwidth]{source/images/image10.png}
+ 		\captionof{figure}{\label{fig:graph2}Disposición de los consumidores a nivel mundial para no  usar la realidad virtual y aumentada si esta se encuentra disponible en los próximos 2 años(2020 -2021)}
+	\end{center} 
 \end{figure}
 
-A medida que crece el consumo de software, 
-multimedia y videojuegos se aumentará la disponibilidad de sistemas 
-como el que se propone en este trabajo terminal.
+A medida que crece el consumo de software, multimedia y videojuegos se aumentará la disponibilidad de sistemas como el que se propone en este trabajo terminal.
+\\
 
 \section{Objetivos del Trabajo}
 Objetivo es analizar, diseñar, desarrollar y probar un sistema de demostración que utiliza la tecnología de Realidad Virtual, para ofrecer una experiencia orientada al estudio de la anatomía y morfología del cuerpo humano, específicamente del sistema digestivo.
+\newline
 
 \subsection{Objetivos Específicos}
 Para lograr el objetivo se identificaron los siguientes objetivos específicos:
+\newline
 \begin{itemize}
 \item Investigar en fuentes confiables sobre el sistema digestivo.
 \item Analizar, diseñar, desarrollar y probar un entorno de Realidad Virtual para la interacción.
@@ -110,14 +109,12 @@ Isdale, Jerry\\
 Levis, Diego\\
 \newline
 Esta última ha sido la definición que se ha tomado para el desarrollo del proyecto del trabajo terminal, asimismo se puede concluir que todos los autores coinciden en que la realidad virtual es un mundo simulado en el que el usuario puede interactuar en tiempo real por medio
-de dispositivos o computadoras que logran un efecto artificial e inmersivo en el que se pueden manipular objetos.\\
-\newline
+de dispositivos o computadoras que logran un efecto artificial e inmersivo en el que se pueden manipular objetos.
 
 \subsection{Producto Multimedia}
-Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar en productos estáticos como carteles, logotipos, folletos, modelos estáticos 3D, etc., y productos basados en el tiempo. [ 13, 14 ].\\ 
+Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar en productos estáticos como carteles, logotipos, folletos, modelos estáticos 3D, etc., y productos basados en el tiempo. \cite{engels2002object,sauer2001uml}.\\ 
 \newline
-Los productos multimedia interactivos son aplicaciones de software que contienen productos multimedia [ 15 ] (es decir, aplicaciones basadas en eventos como juegos, aplicaciones web basadas en multimedia y materiales de aprendizaje multimedia basados en interactividad).  El diagrama 1 a continuación ilustra los tipos de productos multimedia.\\
-\newline
+Los productos multimedia interactivos son aplicaciones de software que contienen productos multimedia\cite{miranda2017diseno} (es decir, aplicaciones basadas en eventos como juegos, aplicaciones web basadas en multimedia y materiales de aprendizaje multimedia basados en interactividad).  La figura \ref{fig:diag1} a continuación ilustra los tipos de productos multimedia.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = 0.5\textwidth]{source/images/image52.png}
@@ -128,17 +125,79 @@ Los productos multimedia interactivos son aplicaciones de software que contienen
 Un sistema multimedia se puede analizar desde tres puntos:
 \begin{itemize}
 \item La vista externa. La forma en que el usuario interactúa con el producto.
-\item Flujo de acciones. El orden en que se muestran los marcos de los modelos a los usuarios. [ 16, 17 ].
+\item Flujo de acciones. El orden en que se muestran los marcos de los modelos a los usuarios. \cite{aleem2016game,cartwright1996pre}.
 \item  Los roles de los usuarios. La interacción con productos multimedia.
 \end{itemize} 
-La Tabla 1 resume los tipos de productos multimedia y sus características.
+El cuadro \ref{tab:tab1} resume los tipos de productos multimedia y sus características.
 
-%https://www.tablesgenerator.com/
-
+\begin{longtable}[c]{
+>{\columncolor[HTML]{EFEFEF}}c ccc}
+\cellcolor[HTML]{C0C0C0} &
+  \multicolumn{3}{c}{\cellcolor[HTML]{C0C0C0}\textbf{Características Multimedia}} \\
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Tipos de productos\\  multimedia\end{tabular}}} &
+  \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Vista \\ \\ Externa\end{tabular}} &
+  \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Flujo \\ \\ de acciones\end{tabular}} &
+  \cellcolor[HTML]{C0C0C0}\textbf{\begin{tabular}[c]{@{}c@{}}Roles de \\ \\ los Usuarios\end{tabular}} \\
+\endfirsthead
+%
+\endhead
+%
+\hline
+\endfoot
+%
+\endlastfoot
+%
+\textit{Productos estáticos} &
+  Un cuadro &
+  Sin acciones &
+  Pasivo (ver/leer) \\
+\textit{\begin{tabular}[c]{@{}c@{}}Productos basados\\  en tiempo\end{tabular}} &
+  Múltiples cuadros &
+  Secuencia &
+  Pasivo(mirar) \\
+\textit{Productos interactivos} &
+  Impulsado por eventos &
+  \begin{tabular}[c]{@{}c@{}}Secuencia, Selectiva,\\  Interactiva e\\  Impulsada por eventos\end{tabular} &
+  Activo(Realiza eventos) \\ \hline
+\caption{Características de los productos multimedia.}
+\label{tab:tab1}\\
+\end{longtable}
 Para este trabajo, el sistema que se propone es una producto interactivo.
+
+\section{Estado del Arte}
+A continuación se muestran algunos de trabajos académicos desarrollados en México y fueron comparados con el trabajo planeado. Como comparativa y de forma ilustrativa del sector académico.
+\\
+\newline
+\begin{enumerate}
+\item TT No. 2014-A058 “Sistema para la orientación de los efectos sobre la espalda humana en pacientes con sobrepeso” [ 18 ]
+\item TT No. 2012-B055 “Laboratorio Virtual del cuerpo humano 3D con asistente de ayuda en línea para el nivel superior bajo el paradigma de Educación Basada en Web con tecnologías de Web Semántica” [ 19 ]
+\item TT No. 2014-B035 “Simulación en Tercera Dimensión del Sistema Circulatorio de los Cánidos para el uso Educativo” [ 20 ]
+\item TT No. 2014-B039 “Simulación de una Línea del Metro con Realidad Virtual” [ 21 ]
+\item Tesis que para optar por el grado de Maestro en Ciencia e Ingeniería de la Computación, Sistema de seguimiento de movimiento de las extremidades superiores basado en sensores inerciales para rehabilitación en realidad virtual. [ 22 ]
+\item Adecuación educativa de la realidad virtual como herramienta didáctica para el proceso enseñanza-aprendizaje / tesis que para obtener el título de Licenciado en Pedagogía, presenta Maria de la O García Noriega; asesor Lucina Moreno Valle Suárez.  [ 23 ]
+\end{enumerate}
+Así mismo se ha encontrado software propietario desarrollado por empresas privadas los cuales son los siguientes.\\
+\begin{enumerate}
+\item The Body VR: Anatomy Viewer es la única herramienta de visualización de Realidad Virtual disponible en el mercado que se basa en datos médicos específicos del paciente (por ejemplo, MRI, CT, PET) y cumple con los estándares DICOM. Proporciona simulaciones de R.V. anatómicas en tiempo real para visualizar diagnósticos médicos, ilustrar el impacto de los procedimientos y tratamientos, y crear una toma de decisiones más educada.
+
+Figura 3 - Software “The Body VR” en uso.
+
+\item Anatomyou VR: Estructuras anatómicas fotorrealistas, modeladas en colaboración con RenderArea, validadas por expertos clínicos y certificadas por personal capacitado en  Tecnologías Médicas de la Universidad de Las Palmas de Gran Canaria.
+
+Figura 4 -  Pancarta promocional de “Anatomyou VR” 
+
+\item Biodigital Anatomy: El cuerpo tridimensional más completo, científicamente preciso e interactivo jamás ensamblado. Anatomía masculina y femenina, en los detalles básicos (gratuitos) y profesionales. Cada sistema está completamente segmentado, etiquetado y direccionable para una fácil configuración que satisfaga cualquier necesidad educativa.
+
+
+Figura 5 - Interfaz del software de “Biodigital Anatomy”
+
+\item 3D Organon VR Anatom: 3D Organon es un completo atlas anatómico que presenta los 15 sistemas del cuerpo humano. Incluye más de 4,000 estructuras y órganos anatómicos realistas y más de 160 correlaciones clínicas encontradas por sistema del cuerpo.
+
+\end{enumerate}
+
 %\begin{figure}[H]
 %	\begin{center}
-% 		\includegraphics[width = 0.5\textwidth]{images/ipn.png}
+% 		\includegraphics[scale=•]{•} = 0.5\textwidth]{images/ipn.png}
 % 		\captionof{figure}{\label{fig:IPN}Descripción de la %imagen} 
 %	\end{center} 
 %\end{figure}
