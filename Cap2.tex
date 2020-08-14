@@ -107,7 +107,6 @@ También se analizó la factibilidad del proyecto en general. Desde el punto de 
 \label{tab:t23}
 \end{table}
 Económicamente, se determinaron los recursos para desarrollar el sistema así como la comparativa con el uso de cuerpos para su examinación y estudio. Después de un análisis e investigación de los costos con la dirección del Área de Morfología en la Escuela Superior de Medicina bajo la asesoría del Dr. Macias Rios se determinó que el costo que se tiene para el traslado, mantenimiento, uso e inhumación de los cuerpos es de \$40,000.00 c/u, como se ve en el cuadro \ref{tab:t24}.
-\begin{center}
 \begin{table}[H]
 \centering
 \begin{tabular}{|
@@ -120,7 +119,7 @@ Total                                               & \$40,000.00 c/u           
 \caption{Costo de cálculo de uso de cuerpos.}
 \label{tab:t24}
 \end{table}
-\end{center}
+
 En el caso del desarrollo e implementación del proyecto se consideró la depreciación, como se observa en el cuadro \ref{tab:t25}.
 \begin{table}[H]
 \centering
@@ -170,10 +169,10 @@ En el caso del desarrollo e implementación del proyecto se consideró la deprec
 \end{table}
 
 Para ofrecer una experiencia aceptable al momento del uso del equipo de Realidad Virtual y el software se proponen los elementos del cuadro \ref{tab:t26}.
-
-%Tabla de costos de productos, no se ha logrado realizar correctamente%
+%%
+  %Tabla de costos de productos, no se ha logrado realizar correctamente%
+%%
 \textbf{Pendiente tabla costos}\\
-
 Además, el sistema de Realidad Virtual con sus componentes tiene un costo que se muestra en el cuadro \ref{tab:t27}.
 \begin{table}[H]
   \centering
@@ -193,8 +192,7 @@ Además, el sistema de Realidad Virtual con sus componentes tiene un costo que s
   \label{tab:t27}
 \end{table}
 
-Se estimaron los suelos de programador y modelado, como se observa en la tabla \ref{tab:t28}.
-
+Se estimaron los suelos de programador y modelado, como se observa en la tabla \ref{tab:t28}.\\
 \begin{table}[H]
   \centering
   \resizebox{\textwidth}{!}{%
@@ -228,12 +226,11 @@ Se estimaron los suelos de programador y modelado, como se observa en la tabla \
   \multicolumn{1}{l|}{}                                           & Total:           & \$11,780          \\ \cline{2-3} 
   \end{tabular}
   
-  \caption{Cálculo de Costo por Servicios.
-  }
+  \caption{Cálculo de Costo por Servicios.}
   \label{tab:t29}
 \end{table}
 
-Los servicios estimados se muestran en el cuadro \ref{tab:t29} y en el cuadro \ref{tab:t210} se muestra la suma total y como resultado se obtiene el costo total del proyecto, que se estima en: \$326,316.86.
+Los servicios estimados se muestran en el cuadro \ref{tab:t29} y en el cuadro \ref{tab:t210} se muestra la suma total y como resultado se obtiene el costo total del proyecto, que se estima en: \$326,316.86.\\
 \begin{table}[H]
   \centering
   \begin{tabular}{|l|r|}
@@ -252,15 +249,14 @@ Los servicios estimados se muestran en el cuadro \ref{tab:t29} y en el cuadro \r
   \label{tab:my-t210}
   \end{table}
 
-
-En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proyecto de \$326,318.00, con lo cual se puede considerar viable económicamente.
+En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proyecto de \$326,318.00, con lo cual se puede considerar viable económicamente.\\
 
 \section{Análisis de la plataforma Unity ®}
 Unity ® es un motor de desarrollo de videojuegos multiplataforma desarrollado por Unity ® Technologies. Con él se pueden crear videojuegos, simuladores, software de realidad virtual y aumentada. Puede generar código para computadoras de escritorio, portátiles, consolas de videojuegos, Smart TV y otros dispositivos móviles. Ofrece una API de scripting en C\#. En la figura 8 se puede ver el entorno en general.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image33.png}
- 		\captionof{figure}{\label{fig:im20}Interfaz de trabajo de Unity ®3D en 2020}
+ 		\includegraphics[width = .5\textwidth]{source/images/image33.png}
+ 		\captionof{figure}{\label{fig:im20}Interfaz de trabajo de Unity ®3D en 2020 \cite{wiki1}}
 	\end{center} 
 \end{figure}
 
@@ -268,22 +264,23 @@ Unity ® es un motor de desarrollo de videojuegos multiplataforma desarrollado p
 Cada dispositivo rastreador tiene una "constelación" predefinida de LED infrarrojos ocultos debajo del plástico externo, que puede ver resaltado en la figura 9. La luz IR es invisible para el ojo humano.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image55.png}
+ 		\includegraphics[width = .5\textwidth]{source/images/image55.png}
  		\captionof{figure}{\label{fig:im21}Muestra de el diseño de la “constelación” incluida en el Oculus Rift ®}
 	\end{center} 
 \end{figure}
 Los sensores, que son esencialmente cámaras con filtros para ver sólo la luz IR, envían cuadros a la PC del usuario a través de un cable USB a 60 Hz. La PC procesa cada cuadro, identificando la posición de cada LED IR y, por lo tanto, la posición relativa de cada objeto.\\
-El software puede reconocer fácilmente qu\'e LED est\'a viendo porque conoce la forma de la "constelaci\'on", recuerda dónde estaba el objeto en el cuadro anterior y conoce su dirección de aceleración (desde el acelerómetro) y su rotación (desde giroscopio). Cada LED IR también parpadea a una frecuencia específica para identificarse. Estas innovaciones le dieron a Constellation una ventaja sobre los sistemas de seguimiento basados ​​en marcadores anteriores.\\
+El software puede reconocer fácilmente qué LED está viendo porque conoce la forma de la "constelación", recuerda dónde estaba el objeto en el cuadro anterior y conoce su dirección de aceleración (desde el acelerómetro) y su rotación (desde giroscopio). Cada LED IR también parpadea a una frecuencia específica para identificarse.\\
+Estas innovaviones le provieron a "Constellation" de una ventaja sobre los sistemas de seguimiento anteriores.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image15.png}
+ 		\includegraphics[width = .5\textwidth]{source/images/image15.png}
  		\captionof{figure}{\label{fig:im22}Visor Oculus Rift ®, controles Oculus Touch ® y sensores Oculus Sensor ®}
 	\end{center} 
 \end{figure}
 Para admitir el movimiento rápido, los auriculares Rift y los controladores táctiles se comunican de forma inalámbrica con un chip inalámbrico en el sensor cada vez que están a punto de pulsar sus LED. Esto permite que el obturador de la cámara se dispare exactamente como lo hacen los LED, y permite que la exposición sea corta.\\
 
 \section{Análisis de Información médica}
-El cuerpo humano es una estructura compleja y altamente organizada, formada por células que trabajan juntas para realizar funciones específicas necesarias para mantener la vida.[].\\
+El cuerpo humano es una estructura compleja y altamente organizada, formada por células que trabajan juntas para realizar funciones específicas necesarias para mantener la vida.\cite{web10}.\\
 La biología del cuerpo humano incluye:\\
 \begin{itemize}
   \item Fisiología (cómo funciona el cuerpo)
@@ -291,26 +288,26 @@ La biología del cuerpo humano incluye:\\
   \end{itemize}
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image22.png}
- 		\captionof{figure}{\label{fig:im23}Gráfico ejemplificando los sistemas del cuerpo humano.[]
+ 		\includegraphics[width = .5\textwidth]{source/images/image22.png}
+ 		\captionof{figure}{\label{fig:im23}Gráfico ejemplificando los sistemas del cuerpo humano.\cite{web11}}
 	\end{center} 
 \end{figure}
 
 \subsection{Cavidad abdominal}
 Para el desarrollo del trabajo terminal interesa la cavidad abdominal, que es el espacio corporal que ocupa la región del abdomen, ubicada entre el diafragma y la abertura de la pelvis. Es la cavidad más grande del cuerpo humano y contiene los principales órganos del aparato digestivo, urinario y genital.\\
-Para su estudio y evaluación clínica en el campo de la medicina, el abdomen debe ser dividido topográficamente de forma externa en 9 cuadrantes o regiones, utilizando cuatro líneas trazadas imaginariamente, dos verticales y dos horizontales.[ 31 ]\\
+Para su estudio y evaluación clínica en el campo de la medicina, el abdomen debe ser dividido topográficamente de forma externa en 9 cuadrantes o regiones, utilizando cuatro líneas trazadas imaginariamente, dos verticales y dos horizontales.\cite{web12}\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image56.png}
- 		\captionof{figure}{\label{fig:im24} Diagrama que muestra las diferentes cavidades del cuerpo humano.[]
+ 		\includegraphics[width = .3\textwidth]{source/images/image56.png}
+ 		\captionof{figure}{\label{fig:im24}Diagrama que muestra las diferentes cavidades del cuerpo humano.}
 	\end{center} 
 \end{figure}
 A continuación se muestra una representación del sistema digestivo, está contienen la información de cuáles son los órganos y elementos que lo conforman, estos serán varios ya que se han tomado como guía, estos elegidos mediante a una entrevista de estudiantes de medicina como material que se ha utilizado para el estudio del cuerpo humano, para la realización de modelos en 3D, asimismo, ejemplifica el material que dispone pero no limitado a el alumnado para el estudio del sistema en cuestión.\\
 Aunado a esto se incorporan la mayoría de los elementos del sistema digestivo los cuales se encuentran en la cavidad abdominal estos expuestos por autores de los diferentes materiales en los cuales, pero no limitados a estos, se realizó la investigación del sistema.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image72.png}
- 		\captionof{figure}{\label{fig:im25}Órganos digestivos in situ (El epiplón mayor ha sido parcialmente eliminado o reflejado) [ 32 ] []}
+ 		\includegraphics[width = .3\textwidth]{source/images/image72.png}
+ 		\captionof{figure}{\label{fig:im25}Órganos digestivos in situ (El epiplón mayor ha sido parcialmente eliminado o reflejado)\cite{rohen2018anatomy}}
 	\end{center} 
 \end{figure}
 \begin{enumerate}
@@ -321,10 +318,9 @@ Aunado a esto se incorporan la mayoría de los elementos del sistema digestivo l
   \item Ciego con apéndice vermiforme
 \end{enumerate}
 Para efectos de este Trabajo Terminal solamente se desarrolló el sistema digestivo, ubicado en la cavidad abdominal, para su interacción mediante realidad virtual con el mismo.\\
-
 \subsection{Sistema Digestivo}
-El tubo digestivo se compone de diferentes secciones: boca, esófago, estómago, intestino delgado, intestino grueso, recto y ano. Cada una de estas estructuras tiene elementos en común y algunos otros que las diferencian entre ellas.  [ 33 ] Cabe mencionar que el sistema digestivo también incluye órganos situados fuera del tubo digestivo los cuales son, el páncreas, el hígado y la vesícula biliar. Para los efectos del trabajo terminal el sistema digestivo será resumido en los elementos contenidos en la siguiente lista: 
-[ 34 ].\\
+El tubo digestivo se compone de diferentes secciones: boca, esófago, estómago, intestino delgado, intestino grueso, recto y ano. Cada una de estas estructuras tiene elementos en común y algunos otros que las diferencian entre ellas.\cite{rouviere2005anatomia}\\ 
+Cabe mencionar que el sistema digestivo también incluye órganos situados fuera del tubo digestivo los cuales son, el páncreas, el hígado y la vesícula biliar. Para los efectos del trabajo terminal el sistema digestivo será resumido en los elementos contenidos en la siguiente lista:\cite{rohen2018anatomy2}.\\
 \begin{itemize}
   \item Glándulas Salivales
   \item Cavidad Oral
@@ -343,23 +339,19 @@ El tubo digestivo se compone de diferentes secciones: boca, esófago, estómago,
 
 \section{Casos de Uso}
 El planteamiento de casos de uso en un sistema no tradicional como este puede generar dificultades al momento de expresar cuál es la actividad que podrá realizar el actor, ya que las posibilidades son virtualmente infinitas sólo limitadas por las acciones del sistema mismo,  pero se pueden denotar en acciones específicas que queremos que el usuario pueda realizar en el sistema.\\
-Ahora bien en el diagrama 3 se muestran los casos de uso que dan parte a el uso del software y las posibilidades generales de interacción en un software de Realidad Virtual. Aunque las interacciones pueden ser prácticamente infinitas estas se ven limitadas hasta cierto punto por las capacidades integradas dentro del software, más adelante se describirán las interacciones con los modelos 3D de los sistemas elegidos, en este caso el sistema de realidad virtual.\\
+Ahora bien en la figura \ref{fig:im26} se muestran los casos de uso que dan parte a el uso del software y las posibilidades generales de interacción en un software de Realidad Virtual. Aunque las interacciones pueden ser prácticamente infinitas estas se ven limitadas hasta cierto punto por las capacidades integradas dentro del software, más adelante se describirán las interacciones con los modelos 3D de los sistemas elegidos, en este caso el sistema de realidad virtual.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = 1\textwidth]{source/images/image26.png}
+ 		\includegraphics[width = .35\textwidth]{source/images/image36.png}
  		\captionof{figure}{\label{fig:im26}Diagrama de casos de uso del sistema}
 	\end{center} 
 \end{figure}
 
 \section{Complicaciones del desarrollo sin metodología}
 El proyecto comenzó su desarrollo sin tomar en cuenta la metodología de desarrollo Open UP, lo cual detonó en que el trabajo se viera mermado en cuanto a su documentación y desarrollo.\\
-
-El desarrollo de un sistema mediante Open UP puede ser una herramienta poderosa para el desarrollo de software ya que dentro de ella se desarrollan micro incrementos en el desarrollo del software y además cumple con los principios del Manifiesto Ágil [ 35].\\
-
+El desarrollo de un sistema mediante Open UP puede ser una herramienta poderosa para el desarrollo de software ya que dentro de ella se desarrollan micro incrementos en el desarrollo del software y además cumple con los principios del Manifiesto Ágil\cite{beck2001manifesto}.\\
 La problemática surge cuando se intenta implementar en un proyecto de software diferente al cual usualmente se desarrolla, por ejemplo un Sistema de Calendarización de Trabajos terminales o un Generador de Páginas Web, difiere en cuanto a su desarrollo ya que se usan herramientas y elementos diferentes, tales como el desarrollo en el motor Unity ®, el diseño de los modelos 3D y el uso de elementos propietarios de Oculus ® dificultan la tarea de documentación y desarrollo bajo lineamientos por más ligeros que sean debido a la naturaleza del proyecto.\\
-
 Es por eso que se buscó como alternativa una metodología que tome en cuenta las características inherentes de un software que su núcleo está arraigado a la realidad virtual haciéndolo un software multimedia.\\
-
 Debido al cambio de enfoque de desarrollo de la metodología las tareas de reingeniería son suplementadas por más tiempo de desarrollo y refinamiento de los elementos anteriores a estos dentro del cronograma de actividades.\\
 
 
