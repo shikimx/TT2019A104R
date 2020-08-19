@@ -1,5 +1,9 @@
-reporte.pdf: reporte.tex
+reporte.pdf: reporte.tex reporte.bbl
 	pdflatex $<
+reporte.aux: reporte.tex
+	pdflatex $<
+reporte.bbl: reporte.aux
+	bibtex $<
 view: reporte.pdf
 	evince $<
 
