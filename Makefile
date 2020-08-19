@@ -1,8 +1,7 @@
-reporte.dvi: reporte.tex
-	latex $<
-
-view: reporte.dvi
+reporte.pdf: reporte.tex
+	pdflatex $<
+view: reporte.pdf
 	evince $<
 
-clean: 
-	rm -f *.dvi *.aux *.log *.out *.toc
+clean:
+	rm -fr *.pdf *.toc *.aux *.dvi *.log *.out
