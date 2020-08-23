@@ -21,6 +21,7 @@
 \usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
 \usepackage{fancyhdr} 
 \usepackage{listings} % Para usar código fuente
+\usepackage{comment}
 
 \sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
 
@@ -46,23 +47,6 @@
 
 \definecolor{dkgreen}{rgb}{0,0.6,0} % Definimos colores para usar en el código
 \definecolor{gray}{rgb}{0.5,0.5,0.5} 
-% configuración para el lenguaje que queramos utilizar
-\lstset{language=Matlab,
-   keywords={break,case,catch,continue,else,elseif,end,for,function,
-      global,if,otherwise,persistent,return,switch,try,while},
-   basicstyle=\ttfamily,
-   keywordstyle=\color{blue},
-   commentstyle=\color{red},
-   stringstyle=\color{dkgreen},
-   numbers=left,
-   numberstyle=\tiny\color{gray},
-   stepnumber=1,
-   numbersep=10pt,
-   backgroundcolor=\color{white},
-   tabsize=4,
-   showspaces=false,
-   showstringspaces=false}
-
 
 \begin{document}
 
@@ -85,7 +69,7 @@
 \include{Cap3}
 \include{Cap4}
 \include{Cap5}
-\include{Anex}
+%\include{Anex}
 
 %%%%%%% Bibliografía %%%%%%%%
 \bibliography{Biblio} 
@@ -96,5 +80,3 @@
 \appendixpage 
 
 \end{document}
-
-%s
