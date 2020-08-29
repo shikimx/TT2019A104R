@@ -1,36 +1,31 @@
 \documentclass[11pt]{report}
 
-\usepackage[spanish]{babel} %Indica que escribiermos en español
-\usepackage[utf8]{inputenc} %Indica qué codificación se está usando ISO-8859-1(latin1)  o utf8  
-\usepackage{graphicx} % Incluir imágenes en LaTeX
-\usepackage{color} % Para colorear texto
-\usepackage{subfigure} % subfiguras
-\usepackage{float} %Podemos usar el especificador [H] en las figuras para que se
-\usepackage{capt-of} % Permite usar etiquetas fuera de elementos flotantes
-\usepackage{sidecap} % Para poner el texto de las imágenes al lado
-\usepackage{caption} % Para poder quitar numeracion de figuras
-\usepackage{anysize} % Para personalizar el ancho de  los márgenes
+\usepackage[spanish]{babel} 
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{capt-of}
+\usepackage{sidecap}
+\usepackage{caption}
+\usepackage{anysize}
 \usepackage{multirow}
 \usepackage{graphicx}
 \usepackage[table,xcdraw]{xcolor}
 \usepackage{longtable}
-\usepackage[table,xcdraw]{xcolor}
 \usepackage{xcolor}
 \usepackage[normalem]{ulem}
 \usepackage{appendix}
 \usepackage[colorlinks=true,plainpages=true,citecolor=blue,linkcolor=blue]{hyperref}
 \usepackage{fancyhdr} 
-\usepackage{listings} % Para usar código fuente
+\usepackage{listings}
 \usepackage{comment}
 
 \sidecaptionvpos{figure}{c} % Para que el texto se alinie al centro vertical
-
 \marginsize{2cm}{2cm}{2cm}{2cm} % Izquierda, derecha, arriba, abajo
-
 \captionsetup{labelfont={color=gray},font={color=gray}} %Cambia el color de los pies de foto/tabla
-
 \useunder{\uline}{\ul}{}
-
 \renewcommand{\appendixname}{Apéndices}
 \renewcommand{\appendixtocname}{Apéndices}
 \renewcommand{\appendixpagename}{Apéndices} 
@@ -59,10 +54,11 @@
 
 \include{C1_PdP}
 \include{C2_MC}
+
 \include{C3_SP}
 \include{C4_PE}
 \include{C5_C_TF}
-\include{G}
+%\include{G}
 %\include{Cap1}
 %\include{Cap2}
 %\include{Cap3}
