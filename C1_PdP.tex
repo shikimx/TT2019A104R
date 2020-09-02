@@ -1,13 +1,35 @@
 \chapter{Presentación del problema}
 
 \section{Contexto y motivación}
-La Escuela Superior de Medicina del Instituto Politécnico Nacional tiene su antecedente en la Carrera de Medicina Rural creada en 1938, desde entonces ha tenido varias adaptaciones y recintos, siendo el año de 1945 en el que fue creada por decreto oficial la Escuela Superior de Medicina Rural y finalmente en 1957 tuvo sus instalaciones propias, ya que en años previos había tenido que operar en instalaciones de otras Unidades Académicas del Instituto. En 1965 fue suprimido de su nombre el calificativo Rural y en lo sucesivo fue su nombre tal como actualmente se le conoce Escuela Superior de Medicina (ESM) y que es la Unidad Académica del IPN encargada de formar médicos cirujanos. (Fuente de referencia https://www.esm.ipn.mx/conocenos/mision.html)\\
-Para cualquier estudiante de Medicina es fundamental y requisito conocer e interactuar con los sistemas del cuerpo humano, por ejemplo,  para la enseñanza de la anatomía y de morfología es indispensable el uso de cuerpos para su disección y análisis.\\
-Actualmente en la Escuela Superior de Medicina y Homeopatía y la Escuela Superior de Medicina, utilizan principalmente medios impresos tradicionales y uso de cuerpos como principales materiales y recursos para  la enseñanza y aprendizaje.\\
-El uso de cuerpos para su disección en la ESM tiene sus particularidades, por ejemplo, los costos inherentes al mantenimiento de los cuerpos en las instalaciones, frecuentemente se enfrenta el problema de que los cuerpos no son suficientes para la cantidad de alumnos en determinadas clases, algunas veces se deben de compartir los cuerpos con otras instituciones y cuando el cuerpo ya no puede seguir siendo utilizado se debe realizar su inhumación.\\
-Hay además algunas problemáticas que ha enfrentado la ESM, como el mantenimiento óptimo de las instalaciones, particularmente relacionado a lo que se ha mencionado del uso de los cuerpos para exploración, del anfiteatro. Sobre esto a raíz del sismo de septiembre de 2017, se dañaron varios edificios así como el anfiteatro, en el caso de este último quedando inutilizable durante casi seis meses, lo cual obligó  a los docentes a reformular sus clases de morfología y anatomía usando presentaciones de diapositivas y algunos videos. Este tipo de problemas incide directamente en la parte práctica que debe realizar el estudiante de medicina, en este caso en particular, en el semestre siguiente el rendimiento de los estudiantes se vio disminuido a causa de la falta de práctica física con los cuerpos.\\
-Teniendo conocimiento de este tipo de problemas y con la intención de crear una herramienta de software que utilizará la Realidad Virtual, en septiembre de 2018 se entrevistó al Dr. Rios Macias Jefe del Área de Morfología de la Escuela Superior de Medicina (ESM) del Instituto Politécnico Nacional (IPN) y comentó que “los medios que se utilizan para el estudio del cuerpo humano principalmente son impresos tradicionales, así como el uso de cuerpos para su disección y análisis posterior”. Derivado de las entrevistas realizadas, se sabe que, son muchos los subsistemas del cuerpo humano y que la creación de materiales distintos a los libros y materiales impresos, puede ser un área de oportunidad que ofrezca a los estudiantes una alternativa extra para explorar y reforzar sus conocimientos, aunque hasta ahora no es posible reemplazar la interacción de los estudiantes con el cuerpo humano real.1.2 Propuesta de Solución
-Considerando que son muchos los subsistemas que integran el cuerpo humano, se ha elegido el sistema digestivo. Por lo tanto, este documento presenta un prototipo de sistema de realidad virtual del sistema digestivo del cuerpo humano que permite interactuar con modelos tridimensionales de los órganos que lo conforman. La intención podría ser sentar un precedente de un sistema de apoyo al aprendizaje que favorezca la interacción práctica [ 1 ] de los estudiantes de la ESM.\\
+La Escuela Superior de Medicina del Instituto Politécnico Nacional tiene su antecedente en la Carrera de Medicina Rural creada en 1938, 
+desde entonces ha tenido varias adaptaciones y recintos, siendo el año de 1945 en el que fue creada por decreto oficial la Escuela Superior de Medicina 
+Rural y finalmente en 1957 tuvo sus instalaciones propias, ya que en años previos había tenido que operar en instalaciones de otras Unidades Académicas 
+del Instituto. En 1965 fue suprimido de su nombre el calificativo Rural y en lo sucesivo fue su nombre tal como actualmente se le conoce Escuela Superior 
+de Medicina (ESM) y que es la Unidad Académica del IPN encargada de formar médicos cirujanos\cite{web51}\\
+Para cualquier estudiante de Medicina es fundamental y requisito conocer e interactuar con los sistemas del cuerpo humano, por ejemplo,  
+para la enseñanza de la anatomía y de morfología es indispensable el uso de cuerpos para su disección y análisis.\\
+Actualmente en la Escuela Superior de Medicina y Homeopatía y la Escuela Superior de Medicina, utilizan principalmente medios impresos 
+tradicionales y uso de cuerpos como principales materiales y recursos para  la enseñanza y aprendizaje.\\
+El uso de cuerpos para su disección en la ESM tiene sus particularidades, por ejemplo, los costos inherentes al mantenimiento de los cuerpos 
+en las instalaciones, frecuentemente se enfrenta el problema de que los cuerpos no son suficientes para la cantidad de alumnos en determinadas 
+clases, algunas veces se deben de compartir los cuerpos con otras instituciones y cuando el cuerpo ya no puede seguir siendo utilizado se debe 
+realizar su inhumación.\\
+Hay además algunas problemáticas que ha enfrentado la ESM, como el mantenimiento óptimo de las instalaciones, particularmente relacionado a 
+lo que se ha mencionado del uso de los cuerpos para exploración, del anfiteatro. Sobre esto a raíz del sismo de septiembre de 2017, se dañaron 
+varios edificios así como el anfiteatro, en el caso de este último quedando inutilizable durante casi seis meses, lo cual obligó  a los docentes 
+a reformular sus clases de morfología y anatomía usando presentaciones de diapositivas y algunos videos. Este tipo de problemas incide directamente 
+en la parte práctica que debe realizar el estudiante de medicina, en este caso en particular, en el semestre siguiente el rendimiento de los estudiantes 
+se vio disminuido a causa de la falta de práctica física con los cuerpos.\\
+Teniendo conocimiento de este tipo de problemas y con la intención de crear una herramienta de software que utilizará la Realidad Virtual, en septiembre 
+de 2018 se entrevistó al Dr. Rios Macias Jefe del Área de Morfología de la Escuela Superior de Medicina (ESM) del Instituto Politécnico Nacional (IPN) y 
+comentó que “los medios que se utilizan para el estudio del cuerpo humano principalmente son impresos tradicionales, así como el uso de cuerpos para su 
+disección y análisis posterior”. Derivado de las entrevistas realizadas, se sabe que, son muchos los subsistemas del cuerpo humano y que la creación de 
+materiales distintos a los libros y materiales impresos, puede ser un área de oportunidad que ofrezca a los estudiantes una alternativa extra para explorar 
+y reforzar sus conocimientos, aunque hasta ahora no es posible reemplazar la interacción de los estudiantes con el cuerpo humano real.\\
+Considerando que son muchos los subsistemas que integran el cuerpo humano, se ha elegido el sistema digestivo. Por lo tanto, este documento 
+presenta un prototipo de sistema de realidad virtual del sistema digestivo del cuerpo humano que permite interactuar con modelos tridimensionales 
+de los órganos que lo conforman. La intención podría ser sentar un precedente de un sistema de apoyo al aprendizaje que favorezca la 
+interacción práctica\cite{moore1995learning} de los estudiantes de la ESM.\\
 
 \section{Objetivos del Sistema}
 Analizar, diseñar, desarrollar y probar un prototipo de sistema que utiliza la tecnología de Realidad Virtual, para ofrecer una experiencia orientada al estudio 
@@ -53,7 +75,7 @@ Así mismo se ha encontrado software propietario desarrollado por empresas priva
 \begin{itemize}
 \item The Body VR: Anatomy Viewer es la única herramienta de visualización de Realidad Virtual disponible en el mercado que se basa en datos médicos específicos del 
 paciente (por ejemplo, MRI, CT, PET) y cumple con los estándares DICOM. Proporciona simulaciones de RV anatómicas en tiempo real para visualizar diagnósticos médicos, 
-ilustrar el impacto de los procedimientos y tratamientos, y crear una toma de decisiones más educada.\
+ilustrar el impacto de los procedimientos y tratamientos, y crear una toma de decisiones más educada.
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = 0.5\textwidth]{source/images/image9.png}
@@ -89,7 +111,7 @@ realistas y más de 160 correlaciones clínicas encontradas por sistema del cuer
 \section{Organización de capítulos}
 Este documento es el reporte técnico final del trabajo terminal titulado “Sistema de Realidad Virtual del Cuerpo Humano para el Estudio del Sistema Digestivo” con número de registro TT: 2019-A104.\\
 En el \textbf{Capítulo} presente se habla del contexto y la motivación que dieron parte a la realización  de este, por qué se considera como tal y cómo es que se ayudó a resolver el problema planteado mediante la ingeniería en sistemas computacionales. También se menciona que se obtiene al concluir con este trabajo terminal, tales como el prototipo del sistema.\\
-El \textbf{Capítulo II Marco Teórico} muestra conceptos que se consideran útiles para contextualizar este Trabajo Terminal. Presenta conceptos de ...%% TODO: inserta aquí las dos disciplinas que comentas.
+El \textbf{Capítulo II Marco Teórico} muestra conceptos que se consideran útiles para contextualizar este Trabajo Terminal. Presenta conceptos de diciplinas medicas asi como computacionales\\
 En el \textbf{Capítulo III Soluci\'on Propuesta} se describe el trabajo generado en el desarrollo del documento hasta el mes de mayo de 2020 para TT2.\\
 En el \textbf{Capítulo IV Pruebas Experimentales} se muestran pruebas hechas sobre las implementaciones del sistema siguiendo un guión para la prueba.\\ 
 En el \textbf{Capítulo V Conclusiónes y Trabajo a Futuro} se encuentran las conlusiones sobre resultados obtenidos y experiencias para mejorar el proceso, así como la vertiente para continuar con el trabajo.\\

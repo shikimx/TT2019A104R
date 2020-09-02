@@ -1,5 +1,21 @@
 \chapter{Marco Teórico}
 
+\section{Poblaci\'on Objetivo}
+Este trabajo está principalmente orientado a los estudiantes de Educación Superior del área de Medicina, 
+por las circunstancias sobre la idea de su elaboración, está inicialmente orientado a los los estudiantes 
+de la Escuela Superior de Medicina del Instituto Politécnico Nacional, quienes oscilan en un rango de edad 
+de entre 18 y 24 años de edad.\\
+Al respecto se explota un área de oportunidad congruente con el perfil de ingreso deseado de los estudiantes 
+de medicina de la Escuela Superior de Medicina y del desarrollo de sus habilidades respecto al uso de las 
+Tecnologías de la Información.\\
+De entre entre las características deseables\cite{web5} de estos usuarios objetivo se requiere:
+\begin{itemize}
+	\item Disposición para el aprendizaje utilizando herramientas tecnológicas y de información.
+	\item Poseer conocimientos sólidos en las áreas de biología, física, química y en forma idónea conocimientos básicos de las etimologías grecolatinas e idioma inglés, que le facilitarán la comprensión y dominio de los conceptos utilizados en las asignaturas básicas y clínicas.
+	\item Conocer los elementos fundamentales del manejo y uso de las computadoras así como los sistemas de informática y bancos de datos de información médica y científica actuales.
+	\item No ser propenso a sufrir cinetosis\footnote{Trastornos producidos en el organismo a causa del movimiento.	"el efecto más común de la cinetosis es el mareo"}.
+\end{itemize}
+
 \section{Morfología}
 La morfología humana estudia las estructuras del cuerpo humano desde distintos 
 puntos de vista: se encarga de revisar los aspectos macroscópicos; 
@@ -45,10 +61,10 @@ La anatomía molecular (a menudo llamada biología molecular) estudia los compon
  	\captionof{figure}{\label{fig:im23}Los sistemas del cuerpo humano.\cite{web11}}
 	\end{center} 
 \end{figure}
-Para efectos de este trabajo terminal y los alcances del mismo solamente se trabajará con la anatomia humana.
+Para efectos de este trabajo terminal solamente se trabajará con la anatomia humana.
+
 \section{Sistema Digestivo}
-La cavidad abdominal 
-es el espacio corporal que ocupa la región del abdomen, ubicada entre el diafragma y la abertura de la pelvis. 
+La cavidad abdominal es el espacio corporal que ocupa la región del abdomen, ubicada entre el diafragma y la abertura de la pelvis. 
 Es la cavidad más grande del cuerpo humano 
 a diferencia de las demás cavidades,ver \ref{fig:im24}, y 
 contiene los principales órganos del aparato digestivo, urinario y genital.
@@ -62,7 +78,6 @@ trazadas imaginariamente, dos verticales y dos horizontales, ver \ref{fig:im24.0
   \captionof{figure}{\label{fig:im24}Cavidades del cuerpo humano.}
  \end{center} 
 \end{figure}
-
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .3\textwidth]{v3/images/image1.jpg}
@@ -105,7 +120,7 @@ humano, para la realización de modelos en 3D del presente trabajo. ejemplifica 
 	\item Intestino delgado
 	\item Ciego con apéndice vermiforme	
 \end{enumerate}
-En el apendice se puede encontrar la información detallada de los componentes y organos del sistema digestivo.
+En el apendice se puede encontrar la información detallada de los componentes y organos del sistema digestivo.sdsd
 
 \section{Realidad Virtual}
 Algunos autores definen así la Realidad Virtual.\\
@@ -146,7 +161,7 @@ La inclusión de este topo de tecnologías refleja una imagen de indagación que
 	\item \textbf{Impactos de la tecnología en el proceso de aprendizaje} a través de investigaciones de definiciones emergentes de entornos de aprendizaje consistentes con configuraciones sociales más amplias y con visiones más nuevas del proceso de aprendizaje, pensamiento, resolución de problemas y creativo, incluida la naturaleza y el papel de las estrategias de instrucción y concepciones más amplias de los atributos y características del alumno.
 	\item \textbf{La tecnología impacta en los objetivos educativos a través de la reevaluación de los objetivos educativos tradicionales}, repensando lo que se debe aprender, cómo se debe aprender, quién es el alumno, la naturaleza de las experiencias culturales de cada alumno y cómo se puede evaluar el aprendizaje, en particular el la naturaleza transdisciplinaria del conocimiento y el aprendizaje y la literatura emergente sobre estándares y metas para la educación, así como el papel de la tecnología en la configuración de estas reevaluaciones.
 \end{enumerate}
-Todo esto \dots %Pendiente...
+
 \subsection{Participación Programable}
 Las características de la realidad virtual son las mismas que las de una buena enseñanza. El profesor quiere crear un entorno que sea programable y en el que 
 participen los alumnos. "El principio más importante del diseño de actividades en el aula es que las acciones del estudiante determinan lo que se aprenderá". 
@@ -195,8 +210,20 @@ representan la superficie límite del objeto (de forma conceptual, la "cáscara"
 del objeto es su apariencia exterior (en los casos donde interesa el interior simplemente se aproxima, como en el caso del SubSurfaceScattering). Prácticamente todos 
 los paquetes de diseño y animación (incluido Blender) empleados en síntesis de imagen y en aplicaciones interactivas emplean este tipo de modelos.
 \end{itemize}
-Para  cubrir las necesidades de los modelos 3D de los órganos del sistema digestivo se ha opto por que estos fueran realizados en el modelado de contorno por su facilidad 
-de desarrollo y ligereza de carga en el renderizado en el momento de la implementación de estos en el sistema de realidad virtual.\\
+Para  cubrir las necesidades de los modelos 3D de los órganos del sistema digestivo se ha opto por que estos fueran realizados en el 
+modelado de contorno por su facilidad de desarrollo y ligereza de carga en el renderizado en el momento de la implementación de estos 
+en el sistema de realidad virtual.\\
+
+\section{Análisis de la plataforma Unity ®}
+Unity ® es un motor de desarrollo de videojuegos multiplataforma desarrollado por Unity ® Technologies. Con él se pueden crear videojuegos, simuladores, 
+software de realidad virtual y aumentada. Puede generar código para computadoras de escritorio, portátiles, consolas de videojuegos, Smart TV y otros dispositivos móviles. 
+Ofrece una API de scripting en C\#. En la figura \ref{fig:im20} se puede ver el entorno en general.\\
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = .5\textwidth]{source/images/image33.png}
+ 		\captionof{figure}{\label{fig:im20}Interfaz de trabajo de Unity ®3D en 2020 \cite{wiki1}}
+	\end{center} 
+\end{figure}
 
 \section{Generacion de Entorno 3D}
 El entorno 3D es en donde el usuario se encontrará al ingresar al sistema de realidad virtual, para, este se ha realizado para dar la sensación de encontrarse en un ambiente médico.\\
@@ -223,7 +250,3 @@ la inmersión del usuario sea la mayor posible.\\
  		\captionof{figure}{\label{fig:im33}Entorno 3D  vista principal}
 	\end{center} 
 \end{figure}
-
-
-% (Aquí puede decir lo de unity y demás cosas que se requieren para hacer lo que usted ya hizo)
-%(Tratemos de usar lo que se tiene y solo añadir si es indispensable, recortar si es necesario para añadir a Apendices, como lo de las imagenes del aparato digestivo que estaban en el primer documento)
