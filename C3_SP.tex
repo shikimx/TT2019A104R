@@ -187,15 +187,48 @@ que se estima en: \$326,316.86.\\
 
 En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proyecto de \$326,318.00, con lo cual se puede considerar viable económicamente.\\
 
+\section{Casos de Uso}
+El planteamiento de casos de uso en un sistema no tradicional como este puede generar un dificultades al momento de expresar cuál es la actividad que podrá 
+realizar el actor ya que las  pero se pueden denotar en acciones específicas que queremos que el usuario pueda realizar en el sistema.\\
+%TODO Imagen de el caso de uso.
+Ahora bien en la figura 3 se muestran los casos de uso que dan parte a el uso del software y las posibilidades generales de interacción en un software de 
+Realidad Virtual. Aunque las interacciones pueden ser prácticamente infinitas estas se ven limitadas hasta cierto punto por las capacidades integradas dentro 
+del software, más adelante se describirán las interacciones con los modelos 3D de los sistemas elegidos, en este caso el sistema de realidad virtual.
+
 \section{Metodología}
 
 \subsection{OpenUP}
+OpenUP [ 14 ] es un proceso de desarrollo de software basado en RUP, publicado con licencia de código abierto donde solo se incluye el contenido mínimo y fundamental. 
+Se puede utilizar como base de desarrollo en procesos específicos, ya que no posee todos los elementos para un proyecto de gran tamaño. Debido a lo anterior OpenUP 
+es extensible de tal manera que puede ser utilizado como base, donde se puede adaptar o añadir el contenido necesario para desarrollar un proyecto.\\
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1\textwidth]{v2/images/image47.png}
+ 		\captionof{figure}{\label{fig:me2}Ciclo de Vida Iterativo de OpenUP}
+	\end{center} 
+\end{figure}
+
+\subsection{Fases de OpenUP}
+OpenUP está organizado en dos métodos, contenido y proceso. Consta de cuatro fases: concepción o creación del proyecto, preparación o elaboración detallada del proyecto, 
+construcción y transición.
+\begin{itemize}
+  \item \textbf{Contenido:} El método contenido incluye funciones tales como, tareas, artefactos y orientación que se definen de manera independiente.
+  \item \textbf{Proceso:}  Donde el método de elementos se aplica de forma temporal.  
+\end{itemize}
+
+\subsubsection{Fases}
+\begin{itemize}
+  \item \textbf{Fase de Creación}: Esta fase es la primera de todas y la más importante, ya que aquí se estudia y entiende el alcance y objetivos del proyecto para determinar si se debe continuar o de lo contrario este no debería continuar. 
+  \item \textbf{Fase de Elaboración}: Es la segunda fase en el ciclo de vida del proyecto, cuando los riesgos arquitecturalmente característicos son dirigidos. 
+  \item \textbf{Fase de Construcción}: El objetivo principal de esta fase es centrarse en el diseño, en la implementación y la prueba para llevar a cabo un sistema completo basado en la arquitectura.
+  \item \textbf{Fase de Transición}: El objetivo de esta cuarta y última fase es garantizar que el producto está listo para ser entregado a los usuarios.
+\end{itemize}
 
 \subsection{Metodología de Ingeniería de Software Multimedia}
 
 \subsection{Complicaciones del desarrollo sin metodología}
-El proyecto comenzó su desarrollo sin tomar en cuenta la metodología de desarrollo Open UP, lo cual detonó en que el trabajo se viera mermado en cuanto a su documentación y desarrollo.\\
-El desarrollo de un sistema mediante Open UP puede ser una herramienta poderosa para el desarrollo de software ya que dentro de ella se desarrollan micro incrementos en el desarrollo del software y además cumple con los principios del Manifiesto Ágil\cite{beck2001manifesto}.\\
+El proyecto comenzó su desarrollo sin tomar en cuenta la metodología de desarrollo OpenUP, lo cual causó que el trabajo se viera mermado en cuanto a su documentación y desarrollo.\\
+El desarrollo de un sistema mediante OpenUP puede ser una herramienta poderosa para el desarrollo de software ya que dentro de ella se desarrollan micro incrementos en el desarrollo del software y además cumple con los principios del Manifiesto Ágil\cite{beck2001manifesto}.\\
 La problemática surge cuando se intenta implementar en un proyecto de software diferente al cual usualmente se desarrolla, por ejemplo un Sistema de Calendarización de Trabajos terminales o un Generador de Páginas Web, difiere en cuanto a su desarrollo ya que se usan herramientas y elementos diferentes, tales como el desarrollo en el motor Unity ®, el diseño de los modelos 3D y el uso de elementos propietarios de Oculus ® dificultan la tarea de documentación y desarrollo bajo lineamientos por más ligeros que sean debido a la naturaleza del proyecto.\\
 Es por eso que se buscó como alternativa una metodología que tome en cuenta las características inherentes de un software que su núcleo está arraigado a la realidad virtual haciéndolo un software multimedia.\\
 Debido al cambio de enfoque de desarrollo de la metodología las tareas de reingeniería son suplementadas por más tiempo de desarrollo y refinamiento de los elementos anteriores a estos dentro del cronograma de actividades.\\
@@ -215,7 +248,6 @@ relevantes y adoptados. \cite{web18} \\
 Al mismo tiempo, el medio de la realidad virtual como propiedades, como la capacidad de intersección del contenido, son únicas.\\
 Es por esto que el diseño de un sistema de realidad virtual presenta retos los cuales son difíciles de sobrellevar ya que se tiene que crear una experiencia para el 
 usuario en el sistema mismo lo cual conlleva a la selección de una estrategia de diseño centrada en la UX del usuario.
-
 
 \section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual Optima.}
 La realización una experiencia de realidad alternativa es la prueba definitiva para diseñar una experiencia de usuario impecable que pueda sumergir los sentidos y 
@@ -453,33 +485,35 @@ Realizando estos pasos se logra el rastreo de los controles y el HMD ejemplifica
 \end{figure}
 
 \section{Locomoción y ergonomía}
-El modo más simple de locomoción es el movimiento físico y este es el más confortable que se puede tener debido a que cuando uno decide moverse en la realidad el usuario también se moverá dentro del entorno virtual, pero este viene con limitaciones inherentes y retos que no son plenamente obvios al momento de la concepción y desarrollo, se exponen algunos a continuación .\\
+El modo más simple de locomoción es el movimiento físico y este es el más confortable que se puede tener debido a que cuando uno decide moverse en la realidad el 
+usuario también se moverá dentro del entorno virtual, pero este viene con limitaciones inherentes y retos que no son plenamente obvios al momento de la concepción y 
+desarrollo, se exponen algunos a continuación .\\
 \begin{itemize}
     \item Los usuarios poseen áreas de interacción de diferentes tamaños, no todos poseen un área grande lo cual les permite más libertad de movimiento, mientras más pequeño sea el espacio que requiera el usuario más usuarios podrán hacer uso del sistema. Se podría ajustar el contenido del sistema, pero esto implicaría mayor trabajo y tiempo, esto no se traduce en una experiencia de usuario mejor que si este se hubiera diseñado con un área de interacción pequeña en primer lugar.
     \item Se toma en cuenta que con el movimiento físico es probable que algunos usuarios no tengan la posibilidad de moverse físicamente dentro de su área, pueden estar limitados por una discapacidad, lo cual implicaría en que el movimiento sería una distracción para el usuario asumiendo que de algún modo este pudiera interactuar de alguna manera.
 \end{itemize}
-Otros dos tipos más de locomoción que se consideraron para el desarrollo del sistema uno de estos es el movimiento guionizado y movimiento de avatar, el primero se refiere a cuando la perspectiva se mueve a través de un camino predeterminado, este es usualmente utilizado cuando se realiza una experiencia que no requiera movimientos del usuario, fácilmente ejemplificado por un viaje en una montaña rusa en un software de realidad virtual este puede llegar a causar vección, generalmente este tipo de movimiento suele ser poco tolerable en largos periodos de tiempo.\\
-
-Por otro lado el movimiento de avatar es el clásico movimiento que solemos encontrar en videojuegos o en experiencias pasadas de realidad virtual, al mover una palanca del mando el avatar comenzará su movimiento. Este fue un acercamiento más que válido pero con el progreso de la tecnología la manera de implementar el movimiento ha evolucionado.\\
-
-La teleportación se refiere a una mecánica instantánea o casi instantánea en la cual el usuario aparece en un lugar seleccionado, típicamente funciona apuntando hacia al lugar deseado y presionando un botón, aunque hay múltiples variaciones de este acercamiento.\\
-
+Otros dos tipos más de locomoción que se consideraron para el desarrollo del sistema uno de estos es el movimiento guionizado y movimiento de avatar, el primero se 
+refiere a cuando la perspectiva se mueve a través de un camino predeterminado, este es usualmente utilizado cuando se realiza una experiencia que no requiera movimientos 
+del usuario, fácilmente ejemplificado por un viaje en una montaña rusa en un software de realidad virtual este puede llegar a causar vección, generalmente este tipo de 
+movimiento suele ser poco tolerable en largos periodos de tiempo.\\
+Por otro lado el movimiento de avatar es el clásico movimiento que solemos encontrar en videojuegos o en experiencias pasadas de realidad virtual, al mover una palanca 
+del mando el avatar comenzará su movimiento. Este fue un acercamiento más que válido pero con el progreso de la tecnología la manera de implementar el movimiento ha evolucionado.\\
+La teleportación se refiere a una mecánica instantánea o casi instantánea en la cual el usuario aparece en un lugar seleccionado, típicamente funciona apuntando hacia al 
+lugar deseado y presionando un botón, aunque hay múltiples variaciones de este acercamiento.\\
 La teleportación ocurre en un instante lo cual reduce a un mínimo la posibilidad de generar una molestia comparación de los tipos de movimiento expuestos anteriormente.\\
-
-Tomando en cuenta los tipos de movimiento pasado, sus deficiencias y beneficios se tomó la decisión de implementar la teleportación como método de movimiento en el entorno virtual del sistema.\\
+Tomando en cuenta los tipos de movimiento pasado, sus deficiencias y beneficios se tomó la decisión de implementar la teleportación como método de movimiento en el entorno 
+virtual del sistema.\\
 
 \subsection{Teleportación}
-En este apartado se desarrollaron los movimientos que el usuario pudiera tener dentro del entorno en 3D, estos dan la posibilidad de “movimiento” dentro del mismo así como las limitaciones que se implementan para que el mismo usuario no pueda acceder a partes que no queramos o estén disponibles para este.\\
-
+En este apartado se desarrollaron los movimientos que el usuario pudiera tener dentro del entorno en 3D, estos dan la posibilidad de “movimiento” dentro del mismo así 
+como las limitaciones que se implementan para que el mismo usuario no pueda acceder a partes que no queramos o estén disponibles para este.\\
 El desarrollo se realizó de la manera siguiente:\\ 
-
-Se cambió el nombre del Prefab a una convención de nombres, en este caso Teleport.Curved. respectivamente, y se realizó una copia para la mano derecha para tener un objeto distinto para la mano derecha.\\
-
+Se cambió el nombre del Prefab a una convención de nombres, en este caso Teleport.Curved. respectivamente, y se realizó una copia para la mano derecha para tener 
+un objeto distinto para la mano derecha.\\
 Se configuró el script de fachada de puntero adjunto a cada objeto arrastrando el Alias de controlador correspondiente de la Jerarquía al campo FollowSource.\\
-
 Se crearon dos nuevos GameObjects vacíos para el manejo de las entradas del control y adjunto el script OVRInputTouchAction a cada uno de ellos.\\
-
-Se estableció el valor de la propiedad táctil de ambos scripts OVRInputTouchAction en Thumbstick primario. Estableciendo el valor de la propiedad del controlador en L Touch y R Touch respectivamente.\\
+Se estableció el valor de la propiedad táctil de ambos scripts OVRInputTouchAction en Thumbstick primario. Estableciendo el valor de la propiedad del controlador en L Touch
+ y R Touch respectivamente.\\
 
 \begin{verbatim}
     using System.Collections;
@@ -507,16 +541,15 @@ De esta manera al tocar cualquier thumbstick este invocará una curva la cual no
 	\end{center} 
 \end{figure}
 
-Para la adición de la acción de teleportación, la cual es la que permitirá el movimiento del usuario dentro del entorno de realidad virtual. Se tuvo la opción de implementar dos tipos de acciones de teleportación, Teleport.Instant y Teleport.Dash, se eligió la primera ya que supone una menor probabilidad de causar vección en el usuario ya que no se percibe movimiento alguno en la acción de teleportación.\\
-
+Para la adición de la acción de teleportación, la cual es la que permitirá el movimiento del usuario dentro del entorno de realidad virtual. Se tuvo la opción de 
+implementar dos tipos de acciones de teleportación, Teleport.Instant y Teleport.Dash, se eligió la primera ya que supone una menor probabilidad de causar vección en el usuario 
+ a que no se percibe movimiento alguno en la acción de teleportación.\\
 Se implementó VRTK/Locomotion/Teleporter y arrastrando el Teleporter.Prefab instantánea a la escena.\\
-
 %En el script de TeleporterFacade se adjunto al objeto Teleporter.Instant, asignado al objeto de  la escena PlayAreaAlias ​​al campo Target y el objeto de escena HeadsetAlias ​​al campo Offset.\\
 Se estableció el campo de validez de la cámara del script de TeleporterFacade en el objeto de escena SceneCameras.\\
-
 Se crearon dos nuevos GameObjects vacíos  para adjuntar las entradas de los botones y se adjunto el script OVRInputButtonAction a cada uno de ellos.\\
-
-Se estableció el valor de la propiedad táctil de ambos scripts OVRInputButtonAction en Thumbstick primario. Se estableció el valor de la propiedad del controlador en L.Touch y R.Touch respectivamente.\\
+Se estableció el valor de la propiedad táctil de ambos scripts OVRInputButtonAction en Thumbstick primario. Se estableció el valor de la propiedad del controlador en 
+L.Touch y R.Touch respectivamente.\\
 
 \begin{verbatim}
     using System.Collections.Generic;
@@ -533,14 +566,11 @@ public class OVRInputButtonAction : BooleanAction {
 }
 \end{verbatim}
 
-Para cada objeto prefabricado Curva de puntero de objeto, se asignó los GameObjects correspondientes con el script OVRInputButtonAction al campo Acción de selección en el componente Fachada de puntero.\\
-
+Para cada objeto prefabricado Curva de puntero de objeto, se asignó los GameObjects correspondientes con el script OVRInputButtonAction al campo Acción de selección en el 
+componente Fachada de puntero.\\
 Para cada puntero de ObjectPointer.Curved, se agregó un nuevo objeto EventData en la lista Datos de acción seleccionados.\\
-
 Se asignó el objeto Teleporter.Instant al campo de objeto ubicando y seleccionando TeleporterFacade y luego Teleport.\\
-
 Implementando los procesos pasados se logra que el usuario pueda teleportarse dentro del  entorno virtual.\\
-
 De esta manera al tocar cualquier thumbstick este invocará una curva la cual nos mostrará dónde será la teleportación una vez esta sea implementada.\\
 \begin{figure}[H]
 	\begin{center}
@@ -555,22 +585,18 @@ De esta manera al tocar cualquier thumbstick este invocará una curva la cual no
 	\end{center} 
 \end{figure}
 
-En la figura \ref{fig:im318} se puede notar un oscurecimiento, el cual es representativo del desvanecimiento que se implementó para reducir la vección del usuario y evitar cinetosis en los usuarios que pudieran llegar a ser propensos a ella.\\
-
-Se procedió a integrar un indicador de flecha el cual servirá para indicar a de cara a que posición se estará cuando se realice la teleportación, así ampliando las posibilidades de interacción del usuario y facilitando las mismas.\\
-
-Se importó un modelo de flecha en la vista Proyecto y fue arrastrado a la escena debajo del objeto de escena ValidContainer ubicado dentro de la jerarquía de objetos de escena de Destino para cada prefab ObjectPointerCurved.\\
-
+En la figura \ref{fig:im318} se puede notar un oscurecimiento, el cual es representativo del desvanecimiento que se implementó para reducir la vección del usuario y evitar 
+cinetosis en los usuarios que pudieran llegar a ser propensos a ella.\\
+Se procedió a integrar un indicador de flecha el cual servirá para indicar a de cara a que posición se estará cuando se realice la teleportación, así ampliando las posibilidades 
+de interacción del usuario y facilitando las mismas.\\
+Se importó un modelo de flecha en la vista Proyecto y fue arrastrado a la escena debajo del objeto de escena ValidContainer ubicado dentro de la jerarquía de objetos de escena 
+de Destino para cada prefab ObjectPointerCurved.\\
 Se ajustó la transformación del nuevo objeto de flecha para que sea visible dentro de la escena y asigne material PointerDefaultValid al renderizador de malla.\\
-
 Se crearon dos nuevos GameObjects para cada control y obtener la dirección del stick del control vacíos y integró el script OVRInputAxis2DAction a cada uno de ellos.\\
-
-Se estableció el valor de la propiedad táctil de ambos scripts OVRInputAxis2DAction en el control primario así como el valor de la propiedad del controlador en L Touch y R Touch respectivamente.\\
-
+Se estableció el valor de la propiedad táctil de ambos scripts OVRInputAxis2DAction en el control primario así como el valor de la propiedad del controlador en L Touch 
+y R Touch respectivamente.\\
 Se implementa el prefabricado AxisRotator a la escena.\\
-
 Se cambia el nombre del Prefab a una convención de nombres AxisRotator.L  y se realiza una copia para la mano derecha ya se que implemento de la misma manera con el nombre AxisRotator.R\\
-
 Se crearon dos nuevos GameObjects vacíos debajo de cada uno de los objetos OVRInputAxis2DAction creados anteriormente y se agrego el script Vector2ToFloat a los cuatro.\\
 
 \begin{verbatim}
@@ -592,22 +618,17 @@ public class OVRInputAxis2DAction : Vector2Action
 
 Se estableció el valor del eje del script Vector2ToFloat en el eje correcto, en este caso, una X y una Y para cada objeto OVRInputAxis2DAction.\\
 En cada secuencia de comandos OVRInputAxis2DAction, se agregaron dos nuevos objetos Vector2 a la lista de valores cambiados de Vector2.\\
-
 Se asignaron los objetos Vector2ToFloat a cada campo. Usando el menú desplegable, seleccione Vector2ToFloat y luego DoTransform.\\
-
 Use el botón "Agregar componente" en el Inspector para agregar el componente de script FloatAction a cada objeto Vector2ToFloat.\\
-
 En cada scriptVector2ToFloat, agregue un nuevo objeto de acción individual a la lista de acciones individuales transformadas y asigne el objeto primario.\\
-
 Usando el menú desplegable, seleccione FloatAction y luego Recibir.\\
-
-Se configuró cada objeto AxisRotator asignando un objeto FloatAction en los campos Eje lateral lateral y Eje longitudinal correspondientes en el script AxisRotatorFacade para los ejes X e Y de cada mano, respectivamente.\\
-
+Se configuró cada objeto AxisRotator asignando un objeto FloatAction en los campos Eje lateral lateral y Eje longitudinal correspondientes en el script AxisRotatorFacade 
+para los ejes X e Y de cada mano, respectivamente.\\
 %En cada script AxisRotatorFacade, se asignó el objeto de escena ValidContainer correspondiente que se encuentra en la Jerarquía de cada prefabricado ObjectPointerCurved al campo Destino. Se asignó el objeto HeadsetAlias ​​al campo Offset direccional en cada uno de los scripts de AxisRotatorFacade.
-
 En la secuencia de comandos de TeleporterFacade, establezca el valor de Uso de desplazamiento en Offset siempre con rotación de destino.\\
+Implementando esto se logra que un puntero aparezca en una flecha en la dirección indicada para que el usuario pueda elegir su dirección de orientación al 
+elegir la ubicación de teleportación como se muestra en la figura \ref{fig:im319}.\\
 
-Implementando esto se logra que un puntero aparezca en una flecha en la dirección indicada para que el usuario pueda elegir su dirección de orientación al elegir la ubicación de teleportación como se muestra en la figura \ref{fig:im319}.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image62.png}
@@ -623,11 +644,8 @@ Implementando esto se logra que un puntero aparezca en una flecha en la direcci�
 
 \subsection{Puntos de teleportación}
 Los puntos de teleportación son los cuales resaltan una locación dentro del entorno virtual la cual se quiere o requiere que el usuario vaya con facilidad hacia ellas.\\
-
 Se agregó una nueva capa llamada "Teleportable" y se estableció el objeto FloorCollider en la nueva capa.\\
-
 Se creó un nuevo GameObject vacío y se agregaron componente en el Inspector para adjuntar el script AnyLayerRule.\\
-
 Se estableció el campo LayerMask en el script AnyLayerRule en la capa Teleportable.\\
 \begin{verbatim}
     namespace VRTK.Prefabs.Locomotion.DestinationLocations
@@ -749,22 +767,17 @@ Para cada ObjectPointerCurved, se asigno AnyLayerRule al campo TargetValidity de
 \end{figure}
 
 \subsection{Giros rápidos, entradas personalizadas, oclusión del usuario}
-En esta sección se implementan giros de la cámara para facilitar al usuario la interacción en el entorno virtual así como la personalización y mejoras de interacción con los controles las cuales pretenden hacer más intuitivo el movimiento del usuario en el sistema de realidad virtual, además se implementan oclusiones en determinados lugares para evitar que el mismo usuario pueda ver a través de modelos 3D no deseados mermando así la experiencia de usuario.\\
-
+En esta sección se implementan giros de la cámara para facilitar al usuario la interacción en el entorno virtual así como la personalización y mejoras de interacción 
+con los controles las cuales pretenden hacer más intuitivo el movimiento del usuario en el sistema de realidad virtual, además se implementan oclusiones en determinados 
+lugares para evitar que el mismo usuario pueda ver a través de modelos 3D no deseados mermando así la experiencia de usuario.\\
 Se creó un nuevo GameObject vacío para obtener  cuando el stick es tocado y adjunto el script de TeleporterActivation y configurando el campo Controlador en R Touch.\\
-
-Se creó otro nuevo GameObject vacío y adjunto la secuencia de comandos TeleporterSelection y configuro el campo Controlador en R Touch.\\
- 
+Se creó otro nuevo GameObject vacío y adjunto la secuencia de comandos TeleporterSelection y configuro el campo Controlador en R Touch.\\ 
 Se crearon dos nuevos GameObjects vacíos para ser agregados al InputHandler bajo el script TeleporterSelection GameObject y  adjuntó el script FloatAction a cada uno.\\
-
 Se agregó el componente en el Inspector para agregar los objetos del juego de script FloatAction a los campos Extraer X e Extraer Y del script TeleporterSelection.\\
-
 Se asignaron los campos Eje lateral y Eje longitudinal en la secuencia de comandos AxisRotatorFacade a las dos nuevas secuencias de comandos de FloatAction GameObjects.\\
-
 Fueron deshabilitados los objetos de juego de script OVRInputTouch, OVRInputButtonAction y OVRIInputAxis2DAction para la mano derecha.\\
-
-Fueron reasignados los campos Acción de activación y Acción de selección en la secuencia de comandos de PointerFacade de la derecha a la secuencia de comandos TeleporterActivation y TeleporterSelection GameObjects, respectivamente.\\
-
+Fueron reasignados los campos Acción de activación y Acción de selección en la secuencia de comandos de PointerFacade de la derecha a la secuencia de comandos 
+TeleporterActivation y TeleporterSelection GameObjects, respectivamente.\\
 Se inhabilitó el prefabricado ObjectPointerCurved de la izquierda en la escena y el script OVRInputTouch, OVRInputButtonAction GameObjects para la mano izquierda.\\
 \begin{figure}[H]
 	\begin{center}
@@ -774,73 +787,57 @@ Se inhabilitó el prefabricado ObjectPointerCurved de la izquierda en la escena 
 \end{figure}
 
 En el script AxesToVector3Facade adjunto al PrefabObject, estableciendo el Tipo de uso del eje Direccional.\\
-
 Se  estableció el campo Eje lateral en el valor del eje X FloatAction script GameObject ubicado debajo de la mano izquierda OVRInputAxis2DAction script GameObject.\\
-
 Se estableció el valor del campo Multiplicador de velocidad lateral en 45 y el valor del campo Multiplicador de velocidad longitudinal en 0.\\
-
 Agregando una secuencia de comandos Vector3Cache a la secuencia de comandos AxesToVector3Facade GameObject.\\
-
-Se agregó una nueva acción Vector3 a la lista de acciones Vector3 procesadas en el script AxesToVector3Facade y fueron agregadas al GameObject padre. Estableciendo las funciones en Vector3Cache/CachedData.\\
-
+Se agregó una nueva acción Vector3 a la lista de acciones Vector3 procesadas en el script AxesToVector3Facade y fueron agregadas al GameObject padre. 
+Estableciendo las funciones en Vector3Cache/CachedData.\\
 Fue agregado un script CameraColorOverlay al script GameObject de AxesToVector3Facade.\\
-
 Se agregó un nuevo Vector3 a la lista de Vector3 modificado en el script Vector3Cache y  se agrego el objeto del juego principal. Estableciendo las funciones en CameraColorOverlay/link.\\
-
 En el script CameraColorOverlay, se asignó el objeto de escena SceneCameras al campo Validez de la cámara.\\
-
 Se implementó el material de TeleportFade en el proyecto y asignando al campo Material de superposición en el script CameraColorOverlay y cambie el valor del campo Eliminar duración a 0.5.\\
-
 Se creó un nuevo GameObject vacío y se agrego el componente para agregar el script Vector3ToVector2 y un script Vector2ToVector3.\\
-
-Fue agregada una nueva acción Vector3 a la lista de acciones Vector3 procesadas en el script AxesToVector3Facade y agregando el GameObject del script Vector3ToVector2. Se estableció la función en Vector3ToVector2/DoTransform.\\
-
-Se agregó una nueva acción Vector2 a la lista de acciones Transform(Vector2) en el script Vector3ToVector2 y agregó el GameObject principal. Se establecieron las funciones en Vector2ToVector3\/.DoTransform.\\
-
-Se establecieron dentro del campo Mapa de coordenadas en X a Y e Y a X excluyendo Z en el script Vector3ToVector2. Se agregó el script TransformEulerRotationMutator al objeto de juego de script Vector3ToVector2.\\
-
-En el script Vector2ToVector3, fue agregada una nueva acción Vector3 a la lista de acciones Transform(Vector3). Asignando el GameObject principal y estableciendo el menú desplegable en TransformEulerRotationMutator/DoIncrementProperty.\\
-
-Estableciendo el campo Destino en el script TransformEulerRotationMutator para el objeto de escena PlayAreaAlias. Se activan las opciones usar valores locales y mutar en el eje Y e inhabilitar las opciones mutar en el eje X y mutar en el eje Z.\\
+Fue agregada una nueva acción Vector3 a la lista de acciones Vector3 procesadas en el script AxesToVector3Facade y agregando el GameObject del script Vector3ToVector2. Se estableció la 
+función en Vector3ToVector2/DoTransform.\\
+Se agregó una nueva acción Vector2 a la lista de acciones Transform(Vector2) en el script Vector3ToVector2 y agregó el GameObject principal. Se establecieron las funciones en 
+Vector2ToVector3\/.DoTransform.\\
+Se establecieron dentro del campo Mapa de coordenadas en X a Y e Y a X excluyendo Z en el script Vector3ToVector2. Se agregó el script TransformEulerRotationMutator al objeto de 
+juego de script Vector3ToVector2.\\
+En el script Vector2ToVector3, fue agregada una nueva acción Vector3 a la lista de acciones Transform(Vector3). Asignando el GameObject principal y estableciendo el menú 
+desplegable en TransformEulerRotationMutator/DoIncrementProperty.\\
+Estableciendo el campo Destino en el script TransformEulerRotationMutator para el objeto de escena PlayAreaAlias. Se activan las opciones usar valores locales y mutar en el eje Y 
+e inhabilitar las opciones mutar en el eje X y mutar en el eje Z.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image47.png}
  		\captionof{figure}{\label{fig:im323} Captura previa de giro rápido con stick de control izquierdo}
 	\end{center} 
 \end{figure}
-
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image71.png}
  		\captionof{figure}{\label{fig:im324}Captura posterior de giro rápido con stick de control izquierdo}
 	\end{center} 
 \end{figure}
-
 Deshabilitando el objeto SnapToFloor debajo del objeto Teleporter\_.InstantPrefab en la escena.\\
-
 Utilizando el prefabricado CollisionFader en el proyecto y arrastrándolo a la escena debajo del objeto de escena HeadsetAlias.\\
-
 En el script CameraColorOverlay adjunto al prefabricado CollisionFader, se estableció el campo CameraValidity en el objeto de escena SceneCameras.\\
-
 Fueron creadas dos nuevas capas llamadas FadeCamera y FadeOut. Colocando el objeto prefabricado CollisionFader en la capa FadeCamera.\\
-
 Se colocó el objeto de la escena principal en la capa FadeOut. Se cambió la matriz de colisión para que la capa FadeCamera solo colisione con la capa FadeOut.\\
-
 Cambiando el valor del campo ClearFlags en los scripts de la cámara bajo el GameObject de escena OVRCameraRig a color sólido y configurando el color en negro.\\
 
 \section{Presencia e interacción de las manos}
-Desde la introducción de los controles Oculus Touch para el sistema Oculus Rift y similares, la presencia de las manos ha sido la manera principal de proveer una experiencia de realidad virtual, los usuarios pueden encontrar manos virtuales que simulan las que poseen en realidad, esto nos ayuda a utilizar el conocimiento de los usuarios del mundo real y trasladarlo a el entorno virtual en lugar de tener que crear y asignar botones y crear controles complicados ya que las manos en la realidad virtual son tan importantes como en la realidad.\\
-
-
+Desde la introducción de los controles Oculus Touch para el sistema Oculus Rift y similares, la presencia de las manos ha sido la manera principal de proveer una experiencia de 
+realidad virtual, los usuarios pueden encontrar manos virtuales que simulan las que poseen en realidad, esto nos ayuda a utilizar el conocimiento de los usuarios del mundo real y 
+trasladarlo a el entorno virtual en lugar de tener que crear y asignar botones y crear controles complicados ya que las manos en la realidad virtual son tan importantes como en 
+la realidad.\\
 La implementación de manos en el sistema de realidad virtual se realizó de la manera siguiente:\\
 
 \subsection{Agregar manos}
-Se integraron los prefabricados CustomHandLeft y CustomHandRight en el proyecto y se adicionaron a  los prefabricados LeftControllerAlias y RightControllerAlias correspondientes en la escena.\\
-
+Se integraron los prefabricados CustomHandLeft y CustomHandRight en el proyecto y se adicionaron a  los prefabricados LeftControllerAlias y RightControllerAlias 
+correspondientes en la escena.\\
 Deshabilitando el script OVRGrabber en los objetos de escena CustomHandLeft y CustomHandRight.\\
-
 Deshabilite el componente MeshRenderer para los objetos Cube en las jerarquías LeftControllerAlias y RightControllerAlias.\\
-
 Se establecieron la capa de los objetos de escena CustomHandLeft y CustomHandRight para ignorar Raycast.\\
 \begin{figure}[H]
 	\begin{center}
@@ -861,77 +858,64 @@ Un método de configuración y refinamiento de la posición de las manos es util
  		\captionof{figure}{\label{fig:im327}Refinado de localización de manos en el entorno virtual}
 	\end{center} 
 \end{figure}
-
 Cabe mencionar que debido a la diferencia de complexión de los humanos no se puede realizar una configuración universal de estos elementos.\\
-
-Se localizan los modelos OculusTouchRift\_.Left y OculusTouchRift\_.Right ubicados en la  escena LeftControllerAlias y RightControllerAlias respectivamente para hacer una representación del control en el entorno virtual, si se decide utilizarse en un futuro.\\
+Se localizan los modelos OculusTouchRift\_.Left y OculusTouchRift\_.Right ubicados en la  escena LeftControllerAlias y RightControllerAlias respectivamente para hacer una 
+representación del control en el entorno virtual, si se decide utilizarse en un futuro.\\
 
 \subsection{Interactuando con entorno}
 %Se implementa el prefab de Interactor en el proyecto y se agrega uno debajo de los prefab LeftControllerAlias ​​y RightControllerAlias ​​en la escena.
-
 Se inhabilitó el MeshRenderer en el objeto ExampleAvatar en cada una de las jerarquías de objetos de Interactor.\\
-
-Creando dos nuevos GameObjects para agregarlo al InputHandler y poder controlar los gatillos posteriormente y se agrega el componente en el inspector para agregar los scripts OVRInputAxis1DAction y FloatToBoolean a cada objeto.\\
-
-En los scripts FloatToBoolean, se establezca el campo límites positivos entre 0,75 y 1. Esto para tener una sensación de agarre conforme se va presionando el botón y no sea cuando ya está presionado completamente el gatillo.\\
-
-En cada secuencia de comandos OVRInputAxis1DAction, se establezca el campo controlador en los valores L Touch y R Touch correspondientes y establezca el campo axis en Disparador manual primario. Se agrega componente en el inspector para agregar el script BooleanAction a cada objeto.\\
-
-En los scripts OVRInputAxis1DAction, se agregó un nuevo objeto de acción individual en la lista de acciones individuales de ValueChanged. Agregando el GameObject principal y se estableció el script en FloatToBoolean/DoTransform.\\
-
-En los scripts FloatToBoolean, se agregó un nuevo objeto de acción booleana en la lista de acciones booleanas transformadas. Agregando el GameObject principal y estableciendo en BooleanAction/Receive.\\
-
+Creando dos nuevos GameObjects para agregarlo al InputHandler y poder controlar los gatillos posteriormente y se agrega el componente en el inspector para agregar los scripts
+OVRInputAxis1DAction y FloatToBoolean a cada objeto.\\
+En los scripts FloatToBoolean, se establezca el campo límites positivos entre 0,75 y 1. Esto para tener una sensación de agarre conforme se va presionando el botón y no sea 
+cuando ya está presionado completamente el gatillo.\\
+En cada secuencia de comandos OVRInputAxis1DAction, se establezca el campo controlador en los valores L Touch y R Touch correspondientes y establezca el campo axis en 
+Disparador manual primario. Se agrega componente en el inspector para agregar el script BooleanAction a cada objeto.\\
+En los scripts OVRInputAxis1DAction, se agregó un nuevo objeto de acción individual en la lista de acciones individuales de ValueChanged. Agregando el GameObject principal 
+y se estableció el script en FloatToBoolean/DoTransform.\\
+En los scripts FloatToBoolean, se agregó un nuevo objeto de acción booleana en la lista de acciones booleanas transformadas. Agregando el GameObject principal y estableciendo 
+en BooleanAction/Receive.\\
 En los scripts de InteractorFacade en los prefabricados de Interactor en la escena, estableciendo el campo GrabAction en los GameObjects de script BooleanAction correspondientes.\\
-
-Se utiliza el prefab Interactable.Primary\_.Grab.Secondary Swap en el proyecto y se agregó debajo de la jerarquía de objetos de escena y se hizo coincidir su transformación para los valores de transformación del objeto de escena del modelo en 3D con el cual se quiere interactuar.\\
-
+Se utiliza el prefab Interactable.Primary\_.Grab.Secondary Swap en el proyecto y se agregó debajo de la jerarquía de objetos de escena y se hizo coincidir su transformación para 
+los valores de transformación del objeto de escena del modelo en 3D con el cual se quiere interactuar.\\
 Se deshabilitó el objeto DefaultMesh en la jerarquía Interactable.Primary\_.Grab.Secondary swap object.\\
-
-Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y se ponga a cero los valores de transformación cuando sea necesario.\\
-
+Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y 
+se ponga a cero los valores de transformación cuando sea necesario.\\
 Se inhabilitó el objeto de escena original del modelo 3D deseado.\\
-
-Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary swap object para ubicarse en el entorno 3D correctamente.\\
+Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary 
+swap object para ubicarse en el entorno 3D correctamente.\\
 
 \subsection{Interacciones manuales adicionales}
 
 Para dar una sensación de inmersión más fidedigna se integran los siguientes elementos, estos harán que la gravedad y la velocidad que es impuesta a un objeto se mantenga.\\
-
 Se agregó el script OVRAnchorVelocityEstimator a los objetos de escena LeftHandAnchor, RightHandAnchor y CenterEyeAnchor.\\
-
 En cada script OVRAnchorVelocityEstimator fue establecido el campo Tracked GameObject en el objeto padre del juego y el campo Relative To en el objeto de la escena TrackingSpace.\\
-
-En el script LinkedAliasAssociationCollection adjunto al objeto de escena OVRCameraRig, establezca el campo Headset Velocity Tracker en el objeto de escena CenterEyeAnchor, el campo Left Controller Velocity Tracker en el objeto de escena LeftHandAnchor y el campo en el objeto de escena RightHandAnchor.\\
-
+En el script LinkedAliasAssociationCollection adjunto al objeto de escena OVRCameraRig, establezca el campo Headset Velocity Tracker en el objeto de escena CenterEyeAnchor, 
+el campo Left Controller Velocity Tracker en el objeto de escena LeftHandAnchor y el campo en el objeto de escena RightHandAnchor.\\
 %Para cada prefab del interactor, se estableció el campo VelocityTracker del script InteractorFacade en el LeftControllerAlias ​​y RightControllerAlias ​​correspondientes.\\
 
 \section{Integración de componentes del producto}
-Para el integración de producto, como el mismo nombre de esta fase lo menciona los productos antes realizados, los componentes multimedia y de software finalmente se unen dentro del sistema.\\
+Para el integración de producto, como el mismo nombre de esta fase lo menciona los productos antes realizados, los componentes multimedia y de software finalmente se unen 
+dentro del sistema.\\
 
 \subsection{Generación de interacción con modelos 3D}
 Para poder importar los modelos del sistema digestivo del cuerpo humano estos son agregados dentro de la misma carpeta del proyecto y seleccionar nuevo Asset.\\
-
 Posteriormente estos se agregan a la escena principal del sistema, dependiendo de cuales son los que se deseen integrar.\\
-
-Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y se ponga a cero los valores de transformación cuando sea necesario.\\
-
+Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y 
+se ponga a cero los valores de transformación cuando sea necesario.\\
 Se inhabilitó el objeto de escena original del modelo 3D deseado.\\
-
-Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary swap object para ubicarse en el entorno 3D correctamente.\\
-
+Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary 
+swap object para ubicarse en el entorno 3D correctamente.\\
 De esta manera se integran rápidamente los elementos multimedia diseñados anteriormente.\\
-
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image37.png}
  		\captionof{figure}{\label{fig:im328}Integración de modelo del sistema digestivo 3D dentro del entorno 3D}
 	\end{center} 
 \end{figure}
-
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image67.png}
  		\captionof{figure}{\label{fig:im329}-  Interacción con modelo del hígado del sistema digestivo 3D dentro del entorno 3D}
 	\end{center} 
 \end{figure}
-
