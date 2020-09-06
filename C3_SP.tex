@@ -5,6 +5,11 @@ Se elaboró un sistema de realidad virtual del sistema digestivo del cuerpo huma
  La intención es sentar las bases para un sistema de apoyo al aprendizaje que sea más práctico \cite{moore1995learning}, 
  sin sustituir a ningún método de estudio tradicional.\\
 
+\section{Arquitectura del sistema}
+%Diagrama de despliegue
+%Que componentyes tiene y se crearon
+%ver, interactuar y mover
+
 \section{Viabilidad} \label{viab}
 También se analizó la factibilidad del proyecto en general. Desde el punto de vista técnico se realizó una evaluación de la tecnología 
 actual existente y la posibilidad de utilizarla en el desarrollo del sistema. Además de DirectX versión 11 el cuadro \ref{tab:t23} 
@@ -187,6 +192,14 @@ que se estima en: \$326,316.86.\\
 
 En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proyecto de \$326,318.00, con lo cual se puede considerar viable económicamente.\\
 
+\section{Requerimientos}
+
+\subsection{Funcionales}
+
+\subsection{No Funcionales}
+%Se utiliza oclus
+%Equipo con estas caracteristicas
+
 \section{Casos de Uso}
 El planteamiento de casos de uso en un sistema no tradicional como este puede generar un dificultades al momento de expresar cuál es la actividad que podrá 
 realizar el actor ya que las  pero se pueden denotar en acciones específicas que queremos que el usuario pueda realizar en el sistema.\\
@@ -197,32 +210,32 @@ del software, más adelante se describirán las interacciones con los modelos 3D
 
 \section{Metodología}
 
-\subsection{OpenUP}
-OpenUP [ 14 ] es un proceso de desarrollo de software basado en RUP, publicado con licencia de código abierto donde solo se incluye el contenido mínimo y fundamental. 
-Se puede utilizar como base de desarrollo en procesos específicos, ya que no posee todos los elementos para un proyecto de gran tamaño. Debido a lo anterior OpenUP 
-es extensible de tal manera que puede ser utilizado como base, donde se puede adaptar o añadir el contenido necesario para desarrollar un proyecto.\\
-\begin{figure}[H]
-	\begin{center}
- 		\includegraphics[width = 1\textwidth]{v2/images/image47.png}
- 		\captionof{figure}{\label{fig:me2}Ciclo de Vida Iterativo de OpenUP}
-	\end{center} 
-\end{figure}
+%\subsection{OpenUP}
+%OpenUP [ 14 ] es un proceso de desarrollo de software basado en RUP, publicado con licencia de código abierto donde solo se incluye el contenido mínimo y fundamental. 
+%Se puede utilizar como base de desarrollo en procesos específicos, ya que no posee todos los elementos para un proyecto de gran tamaño. Debido a lo anterior OpenUP 
+%es extensible de tal manera que puede ser utilizado como base, donde se puede adaptar o añadir el contenido necesario para desarrollar un proyecto.\\
+%\begin{figure}[H]
+%	\begin{center}
+% 		\includegraphics[width = 1\textwidth]{v2/images/image47.png}
+% 		\captionof{figure}{\label{fig:me2}Ciclo de Vida Iterativo de OpenUP}
+%	\end{center} 
+%\end{figure}
 
-\subsection{Fases de OpenUP}
-OpenUP está organizado en dos métodos, contenido y proceso. Consta de cuatro fases: concepción o creación del proyecto, preparación o elaboración detallada del proyecto, 
-construcción y transición.
-\begin{itemize}
-  \item \textbf{Contenido:} El método contenido incluye funciones tales como, tareas, artefactos y orientación que se definen de manera independiente.
-  \item \textbf{Proceso:}  Donde el método de elementos se aplica de forma temporal.  
-\end{itemize}
+%\subsection{Fases de OpenUP}
+%OpenUP está organizado en dos métodos, contenido y proceso. Consta de cuatro fases: concepción o creación del proyecto, preparación o elaboración detallada del proyecto, 
+%construcción y transición.
+%\begin{itemize}
+%  \item \textbf{Contenido:} El método contenido incluye funciones tales como, tareas, artefactos y orientación que se definen de manera independiente.
+%  \item \textbf{Proceso:}  Donde el método de elementos se aplica de forma temporal.  
+%\end{itemize}
 
-\subsubsection{Fases}
-\begin{itemize}
-  \item \textbf{Fase de Creación}: Esta fase es la primera de todas y la más importante, ya que aquí se estudia y entiende el alcance y objetivos del proyecto para determinar si se debe continuar o de lo contrario este no debería continuar. 
-  \item \textbf{Fase de Elaboración}: Es la segunda fase en el ciclo de vida del proyecto, cuando los riesgos arquitecturalmente característicos son dirigidos. 
-  \item \textbf{Fase de Construcción}: El objetivo principal de esta fase es centrarse en el diseño, en la implementación y la prueba para llevar a cabo un sistema completo basado en la arquitectura.
-  \item \textbf{Fase de Transición}: El objetivo de esta cuarta y última fase es garantizar que el producto está listo para ser entregado a los usuarios.
-\end{itemize}
+%\subsubsection{Fases}
+%\begin{itemize}
+%  \item \textbf{Fase de Creación}: Esta fase es la primera de todas y la más importante, ya que aquí se estudia y entiende el alcance y objetivos del proyecto para determinar si se debe continuar o de lo contrario este no debería continuar. 
+%  \item \textbf{Fase de Elaboración}: Es la segunda fase en el ciclo de vida del proyecto, cuando los riesgos arquitecturalmente característicos son dirigidos. 
+%  \item \textbf{Fase de Construcción}: El objetivo principal de esta fase es centrarse en el diseño, en la implementación y la prueba para llevar a cabo un sistema completo basado en la arquitectura.
+%  \item \textbf{Fase de Transición}: El objetivo de esta cuarta y última fase es garantizar que el producto está listo para ser entregado a los usuarios.
+%\end{itemize}
 
 \subsection{Metodología de Ingeniería de Software Multimedia}
 \subsection{Características de los Productos Multimedia}
@@ -268,13 +281,6 @@ multimedia y sus características.
   El objetivo de esta fase es tener muy en claro cuales son los alcances y lo que será posible que el proyecto realice. Para ello se  realizaron las siguientes actividades:\\
 
 
-\subsection{Complicaciones del desarrollo sin metodología}
-El proyecto comenzó su desarrollo sin tomar en cuenta la metodología de desarrollo OpenUP, lo cual causó que el trabajo se viera mermado en cuanto a su documentación y desarrollo.\\
-El desarrollo de un sistema mediante OpenUP puede ser una herramienta poderosa para el desarrollo de software ya que dentro de ella se desarrollan micro incrementos en el desarrollo del software y además cumple con los principios del Manifiesto Ágil\cite{beck2001manifesto}.\\
-La problemática surge cuando se intenta implementar en un proyecto de software diferente al cual usualmente se desarrolla, por ejemplo un Sistema de Calendarización de Trabajos terminales o un Generador de Páginas Web, difiere en cuanto a su desarrollo ya que se usan herramientas y elementos diferentes, tales como el desarrollo en el motor Unity ®, el diseño de los modelos 3D y el uso de elementos propietarios de Oculus ® dificultan la tarea de documentación y desarrollo bajo lineamientos por más ligeros que sean debido a la naturaleza del proyecto.\\
-Es por eso que se buscó como alternativa una metodología que tome en cuenta las características inherentes de un software que su núcleo está arraigado a la realidad virtual haciéndolo un software multimedia.\\
-Debido al cambio de enfoque de desarrollo de la metodología las tareas de reingeniería son suplementadas por más tiempo de desarrollo y refinamiento de los elementos anteriores a estos dentro del cronograma de actividades.\\
-
 \section{Selección de estrategia de diseño}
 Al intentar comprender y desarrollar ideas relevantes para los temas, es necesario reiterar la comprensión de sus definiciones actuales y contexto histórico.\\
 Con respecto a la realidad virtual, una de las cosas básicas a considerar es la forma en que nuestros sentidos sirven como la entrada que nuestro cerebro utiliza 
@@ -291,7 +297,7 @@ Al mismo tiempo, el medio de la realidad virtual como propiedades, como la capac
 Es por esto que el diseño de un sistema de realidad virtual presenta retos los cuales son difíciles de sobrellevar ya que se tiene que crear una experiencia para el 
 usuario en el sistema mismo lo cual conlleva a la selección de una estrategia de diseño centrada en la UX del usuario.
 
-\section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual Optima.}
+\section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual Optima.}%Diseno de la experiencioa del usuario para RV
 La realización una experiencia de realidad alternativa es la prueba definitiva para diseñar una experiencia de usuario impecable que pueda sumergir los sentidos y 
 “engañar” a la mente para que abrace la falsa realidad. \\
 Pero crear una experiencia de realidad virtual es mucho más complejo que la producción visual 2D y 3D normal asociada con películas y videojuegos, que nos presenta 
@@ -368,6 +374,7 @@ una altura diferente. Además, se debe de tener en cuenta las diferentes prefere
 una realidad alternativa.
 
 \section{Diseño y Desarrollo de Componentes Multimedia}
+%se construyyeron modelos solidos basados en lo anterior  desarrollados en blender
 
 \subsection{Modelos 3D de los Organos}
 Los componentes multimedia a desarrollar en modelos 3D los cuales son miembros del sistema digestivo del ser humano, 
@@ -461,6 +468,28 @@ A continuación se muestran las figuras del resultado final del desarrollo del s
 	\begin{center}
  		\includegraphics[width = 1\textwidth]{source/images/image24.png}
  		\captionof{figure}{\label{fig:im314}Modelo 3D del Sistema digestivo}
+	\end{center} 
+\end{figure}
+
+\subsection{Generación de interacción con modelos 3D}
+Para poder importar los modelos del sistema digestivo del cuerpo humano estos son agregados dentro de la misma carpeta del proyecto y seleccionar nuevo Asset.\\
+Posteriormente estos se agregan a la escena principal del sistema, dependiendo de cuales son los que se deseen integrar.\\
+Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y 
+se ponga a cero los valores de transformación cuando sea necesario.\\
+Se inhabilitó el objeto de escena original del modelo 3D deseado.\\
+Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary 
+swap object para ubicarse en el entorno 3D correctamente.\\
+De esta manera se integran rápidamente los elementos multimedia diseñados anteriormente.\\
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = .5\textwidth]{source/images/image37.png}
+ 		\captionof{figure}{\label{fig:im328}Integración de modelo del sistema digestivo 3D dentro del entorno 3D}
+	\end{center} 
+\end{figure}
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = .5\textwidth]{source/images/image67.png}
+ 		\captionof{figure}{\label{fig:im329}-  Interacción con modelo del hígado del sistema digestivo 3D dentro del entorno 3D}
 	\end{center} 
 \end{figure}
 
@@ -939,25 +968,3 @@ el campo Left Controller Velocity Tracker en el objeto de escena LeftHandAnchor 
 \section{Integración de componentes del producto}
 Para el integración de producto, como el mismo nombre de esta fase lo menciona los productos antes realizados, los componentes multimedia y de software finalmente se unen 
 dentro del sistema.\\
-
-\subsection{Generación de interacción con modelos 3D}
-Para poder importar los modelos del sistema digestivo del cuerpo humano estos son agregados dentro de la misma carpeta del proyecto y seleccionar nuevo Asset.\\
-Posteriormente estos se agregan a la escena principal del sistema, dependiendo de cuales son los que se deseen integrar.\\
-Duplicando el objeto de escena del modelo 3D deseado y  se vuelve a pintar debajo del objeto Meshes en la jerarquía Interactable.Primary\_.Grab.Secondary\_.swap object y 
-se ponga a cero los valores de transformación cuando sea necesario.\\
-Se inhabilitó el objeto de escena original del modelo 3D deseado.\\
-Si es necesario se ajusta la nueva transformación del modelo en 3D en los grados necesarios en el eje Y y se ajusta la transformación Interactable.Primary\_.Grab.Secondary 
-swap object para ubicarse en el entorno 3D correctamente.\\
-De esta manera se integran rápidamente los elementos multimedia diseñados anteriormente.\\
-\begin{figure}[H]
-	\begin{center}
- 		\includegraphics[width = .5\textwidth]{source/images/image37.png}
- 		\captionof{figure}{\label{fig:im328}Integración de modelo del sistema digestivo 3D dentro del entorno 3D}
-	\end{center} 
-\end{figure}
-\begin{figure}[H]
-	\begin{center}
- 		\includegraphics[width = .5\textwidth]{source/images/image67.png}
- 		\captionof{figure}{\label{fig:im329}-  Interacción con modelo del hígado del sistema digestivo 3D dentro del entorno 3D}
-	\end{center} 
-\end{figure}
