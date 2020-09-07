@@ -6,9 +6,27 @@ Se elaboró un sistema de realidad virtual del sistema digestivo del cuerpo huma
  sin sustituir a ningún método de estudio tradicional.\\
 
 \section{Arquitectura del sistema}
-%Diagrama de despliegue
-%Que componentyes tiene y se crearon
-%ver, interactuar y mover
+
+\subsection{Diagrama de Despliegue}
+Este diagrama representa los dos tipos de elementos, nodos y conexiones, así como la distribución de componentes del sistema 
+de información con respecto a la partición física del sistema.\\
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = .5\textwidth]{v3/images/cu2.jpg}
+ 		\captionof{figure}{\label{fig:as1}Diagrama de despliegue del sistema}
+	\end{center} 
+\end{figure}
+Los componentes de este como se pueden apreciiar en la figura \ref{fig:as1} son las siguientes:
+\begin{itemize}
+  \item \textbf{Dispositivo:}
+  \item \textbf{Componentes:}
+  \begin{itemize}
+    \item Visión
+    \item Interacción
+    \item Rastreo  
+  \end{itemize}
+  \item \textbf{Artefacto:}
+\end{itemize}
 
 \section{Viabilidad} \label{viab}
 También se analizó la factibilidad del proyecto en general. Desde el punto de vista técnico se realizó una evaluación de la tecnología 
@@ -27,8 +45,10 @@ muestra los recursos técnicos necesarios para la ejecución correcta del softwa
   \begin{tabular}[c]{@{}l@{}}Tarjeta gráfica discreta, RX480\\ Memoria RAM 16 Gb\\ 5 Puertos USB\\ Procesador de 4 núcleos o mayor\end{tabular} \\ \hline
 \cellcolor[HTML]{C0C0C0}1 &
   Sistema de realidad Virtual Oculus Rift &
-  \begin{tabular}[c]{@{}l@{}}Visor HMD, controles Touch \\ \\ Sensores Touch.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}Visor HMD, controles Touch \\ \\ Sensores Touch.\end{tabular} \\ \
+  \label{tab:pc}
 \end{tabular}
+
 \caption{ Recursos Técnicos.}
 \label{tab:t23}
 \end{table}
@@ -195,47 +215,37 @@ En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proye
 \section{Requerimientos}
 
 \subsection{Funcionales}
-
+\begin{itemize}
+  \item Rastreo de controles y visore
+  \item Creacion de arcode teleportación
+  \begin{itemize}
+    \item Teleportacion
+  \end{itemize}
+  \item Interaccion con órgano (Modelo 3D)
+  \begin{itemize}
+    \item Inspeccionar órgano
+  \end{itemize}
+  \item Ver información del órgano
+\end{itemize}
 \subsection{No Funcionales}
-%Se utiliza oclus
-%Equipo con estas caracteristicas
+\begin{itemize}
+  \item Se utilizará el Sistema de Realidad Virtual Oculus Rift 
+  \item Se Utilizará un equipo de cómputo con las caracteristicas del apartado \ref{mod3d} 
+\end{itemize}
 
 \section{Casos de Uso}
 El planteamiento de casos de uso en un sistema no tradicional como este puede generar un dificultades al momento de expresar cuál es la actividad que podrá 
 realizar el actor ya que las  pero se pueden denotar en acciones específicas que queremos que el usuario pueda realizar en el sistema.\\
-%TODO Imagen de el caso de uso.
-Ahora bien en la figura 3 se muestran los casos de uso que dan parte a el uso del software y las posibilidades generales de interacción en un software de 
-Realidad Virtual. Aunque las interacciones pueden ser prácticamente infinitas estas se ven limitadas hasta cierto punto por las capacidades integradas dentro 
-del software, más adelante se describirán las interacciones con los modelos 3D de los sistemas elegidos, en este caso el sistema de realidad virtual.
+\begin{figure}[H]
+	\begin{center}
+ 		\includegraphics[width = 1\textwidth]{v3/images/cu1.jpg}
+ 		\captionof{figure}{\label{fig:cu2}Diagrama de casos de uso del sistema}
+	\end{center} 
+\end{figure}
+Ahora bien en la figura \ref{fig:cu2} se muestran los casos de uso que dan parte a el uso del software y las posibilidades generales de interacción en un software de 
+Realidad Virtual. Aunque las interacciones dependen eteramente del objetivo del usuario, estas se ven limitadas por las capacidades integradas dentro del software.\\
 
 \section{Metodología}
-
-%\subsection{OpenUP}
-%OpenUP [ 14 ] es un proceso de desarrollo de software basado en RUP, publicado con licencia de código abierto donde solo se incluye el contenido mínimo y fundamental. 
-%Se puede utilizar como base de desarrollo en procesos específicos, ya que no posee todos los elementos para un proyecto de gran tamaño. Debido a lo anterior OpenUP 
-%es extensible de tal manera que puede ser utilizado como base, donde se puede adaptar o añadir el contenido necesario para desarrollar un proyecto.\\
-%\begin{figure}[H]
-%	\begin{center}
-% 		\includegraphics[width = 1\textwidth]{v2/images/image47.png}
-% 		\captionof{figure}{\label{fig:me2}Ciclo de Vida Iterativo de OpenUP}
-%	\end{center} 
-%\end{figure}
-
-%\subsection{Fases de OpenUP}
-%OpenUP está organizado en dos métodos, contenido y proceso. Consta de cuatro fases: concepción o creación del proyecto, preparación o elaboración detallada del proyecto, 
-%construcción y transición.
-%\begin{itemize}
-%  \item \textbf{Contenido:} El método contenido incluye funciones tales como, tareas, artefactos y orientación que se definen de manera independiente.
-%  \item \textbf{Proceso:}  Donde el método de elementos se aplica de forma temporal.  
-%\end{itemize}
-
-%\subsubsection{Fases}
-%\begin{itemize}
-%  \item \textbf{Fase de Creación}: Esta fase es la primera de todas y la más importante, ya que aquí se estudia y entiende el alcance y objetivos del proyecto para determinar si se debe continuar o de lo contrario este no debería continuar. 
-%  \item \textbf{Fase de Elaboración}: Es la segunda fase en el ciclo de vida del proyecto, cuando los riesgos arquitecturalmente característicos son dirigidos. 
-%  \item \textbf{Fase de Construcción}: El objetivo principal de esta fase es centrarse en el diseño, en la implementación y la prueba para llevar a cabo un sistema completo basado en la arquitectura.
-%  \item \textbf{Fase de Transición}: El objetivo de esta cuarta y última fase es garantizar que el producto está listo para ser entregado a los usuarios.
-%\end{itemize}
 
 \subsection{Metodología de Ingeniería de Software Multimedia}
 \subsection{Características de los Productos Multimedia}
@@ -280,7 +290,6 @@ multimedia y sus características.
   \subsection{Requisitos y preproducción}
   El objetivo de esta fase es tener muy en claro cuales son los alcances y lo que será posible que el proyecto realice. Para ello se  realizaron las siguientes actividades:\\
 
-
 \section{Selección de estrategia de diseño}
 Al intentar comprender y desarrollar ideas relevantes para los temas, es necesario reiterar la comprensión de sus definiciones actuales y contexto histórico.\\
 Con respecto a la realidad virtual, una de las cosas básicas a considerar es la forma en que nuestros sentidos sirven como la entrada que nuestro cerebro utiliza 
@@ -297,7 +306,7 @@ Al mismo tiempo, el medio de la realidad virtual como propiedades, como la capac
 Es por esto que el diseño de un sistema de realidad virtual presenta retos los cuales son difíciles de sobrellevar ya que se tiene que crear una experiencia para el 
 usuario en el sistema mismo lo cual conlleva a la selección de una estrategia de diseño centrada en la UX del usuario.
 
-\section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual Optima.}%Diseno de la experiencioa del usuario para RV
+\section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual}
 La realización una experiencia de realidad alternativa es la prueba definitiva para diseñar una experiencia de usuario impecable que pueda sumergir los sentidos y 
 “engañar” a la mente para que abrace la falsa realidad. \\
 Pero crear una experiencia de realidad virtual es mucho más complejo que la producción visual 2D y 3D normal asociada con películas y videojuegos, que nos presenta 
@@ -374,10 +383,11 @@ una altura diferente. Además, se debe de tener en cuenta las diferentes prefere
 una realidad alternativa.
 
 \section{Diseño y Desarrollo de Componentes Multimedia}
-%se construyyeron modelos solidos basados en lo anterior  desarrollados en blender
+El diseño de los modelos de los organos fue realizado basado en el material del cual se realizo la investigación en la sección \ref{mod3d} con el método de
+Modelado de Contorno ya que este nos permite reducir la cargga de trabajo del motor de Unity, así como el de la tarjeta gráfica.\\
 
 \subsection{Modelos 3D de los Organos}
-Los componentes multimedia a desarrollar en modelos 3D los cuales son miembros del sistema digestivo del ser humano, 
+Los componentes multimedia desarrollados son modelos 3D los cuales son miembros del sistema digestivo del ser humano, 
 el sistema digestivo incluye a los órganos del tubo alimenticio y glándulas de secreción exocrina y endocrina.\\
 
 \subsection{Glándulas Salivales}
@@ -535,11 +545,11 @@ Se optó por el uso de Unity ® en su versión 2018.4 14f1 LTS  ya que esta mism
 \end{figure}
 
 \section{Seguimiento de HMD y controles}
-En este apartado se realizó en rastreo del HMD y de los controles y que estos se vean reflejados como movimientos dentro del software y replicados en el mismo HMD el cual está siendo usado por el usuario y así puede percibir el movimiento. Esto es la base para que el software provea una experiencia en la cual el usuario pueda estar inmerso.\\
-
+En este apartado se realizó en rastreo del HMD y de los controles y que estos se vean reflejados como movimientos dentro del software y replicados en el mismo HMD el cual está 
+siendo usado por el usuario y así puede percibir el movimiento. Esto es la base para que el software provea una experiencia en la cual el usuario pueda estar inmerso.\\
 Utilizando el SDK que provee Oculus para su desarrollo con el motor Unity se realiza el elemento OVRCameraRig y TrackedAlias.\\
-
-Se abrió el prefabricado OVRCameraRig , así como el objeto secundario TrackingSpace en la jerarquía. Se selecciona OVRCameraRig y luego se navega hasta el script LinkedAliasAssociationCollection en el inspector. Se adaptan los siguientes activos en las entradas apropiadas en el Script LinkedAliasAssociationCollection:\\
+Se abrió el prefabricado OVRCameraRig , así como el objeto secundario TrackingSpace en la jerarquía. Se selecciona OVRCameraRig y luego se navega hasta el script 
+LinkedAliasAssociationCollection en el inspector. Se adaptan los siguientes activos en las entradas apropiadas en el Script LinkedAliasAssociationCollection:\\
 \begin{itemize}
     \item TrackingSpace a Play Area
     \item CenterEyeAnchor a el HMD
