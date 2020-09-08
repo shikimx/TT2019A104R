@@ -8,11 +8,11 @@ Se elaboró un sistema de realidad virtual del sistema digestivo del cuerpo huma
 \section{Arquitectura del sistema}
 
 \subsection{Diagrama de Despliegue}
-Este diagrama representa los dos tipos de elementos, nodos y conexiones, así como la distribución de componentes del sistema 
-de información con respecto a la partición física del sistema.\\
+Este diagrama representa los dos tipos de elementos, nodos y conexiones, as\'i como la distribucio\'on de componentes del sistema 
+de informacio\'on con respecto a la particio\'on fisica del sistema.\\
 \begin{figure}[H]
 	\begin{center}
- 		\includegraphics[width = .5\textwidth]{v3/images/cu2.jpg}
+ 		\includegraphics[width = 1\textwidth]{v3/images/cu2.jpg}
  		\captionof{figure}{\label{fig:as1}Diagrama de despliegue del sistema}
 	\end{center} 
 \end{figure}
@@ -25,7 +25,7 @@ Los componentes de este como se pueden apreciiar en la figura \ref{fig:as1} son 
     \item Interacción
     \item Rastreo  
   \end{itemize}
-  \item \textbf{Artefacto:}
+  \item \textbf{Artefacto:} Los moodelos en 3D de los \'organos del sistema digestivo.
 \end{itemize}
 
 \section{Viabilidad} \label{viab}
@@ -132,7 +132,7 @@ Tarjeta de Video & AMD Radeon RX 480 8Gio\\\hline
 \label{tab:componentes}
 \end{table}
 
-\textbf{Pendiente tabla costos}\\
+\textbf{}\\
 Además, el sistema de Realidad Virtual con sus componentes tiene un costo que se muestra en el cuadro \ref{tab:t27}.
 \begin{table}[H]
   \centering
@@ -225,7 +225,7 @@ En resumen, el costo de usar nueve cuerpos sería de \$360,000.00 y el del proye
   \begin{itemize}
     \item Inspeccionar órgano
   \end{itemize}
-  \item Ver información del órgano
+  \item Ver informacio\'on del \'organo
 \end{itemize}
 \subsection{No Funcionales}
 \begin{itemize}
@@ -246,6 +246,8 @@ Ahora bien en la figura \ref{fig:cu2} se muestran los casos de uso que dan parte
 Realidad Virtual. Aunque las interacciones dependen eteramente del objetivo del usuario, estas se ven limitadas por las capacidades integradas dentro del software.\\
 
 \section{Metodología}
+
+\subsection{Metodología de Ingeniería de Software Multimedia}
 Recientemente, los productos multimedia digitales, como imágenes, personajes, modelos y animaciones 2D y 3D, se han utilizado ampliamente en muchos dominios, como publicidad, 
 películas animadas, edición y diseño de publicaciones, etc. Además, el desarrollo de aplicaciones de software ha utilizado productos multimedia ampliamente. en muchos dominios, 
 como marketing electrónico, formación, entretenimiento y juegos, simulación y visualización, y aprendizaje interactivo.\\
@@ -258,8 +260,6 @@ etapa inicial de la especificación de requisitos de software hasta el mantenimi
  para apoyar el modelado de productos multimedia como objetos dentro de aplicaciones de software. \\.
 Por lo tanto, existe la necesidad de una metodología de ingeniería interdisciplinaria que tenga como objetivo satisfacer dos pliegues: describir explícitamente las etapas 
 de producción de productos multimedia. Integrar las etapas de producción multimedia con el ciclo de vida del desarrollo de software.\cite{al2019multimedia}
-
-\subsection{Metodología de Ingeniería de Software Multimedia}
 
 \subsection{Características de los Productos Multimedia}
 Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar 
@@ -276,9 +276,10 @@ productos multimedia.\\
 Cada una de las categorías anteriores tiene un conjunto de características que pueden  clasificarse en tres dimensiones: vista externa, flujo de acciones y roles de los usuarios.\\
 La vista externa se refiere a la forma en que el usuario interactúa con el producto. En este sentido, los usuarios interactúan con productos no interactivos de una manera.\\
 Los usuarios suelen realizar eventos y la respuesta del producto a estos eventos mediante acciones.\\
-%Un flujo de acciones se refiere al orden en que se muestran los marcos de los productos a los usuarios. En productos estáticos, no hay flujo de acciones, ya que los usuarios leen 
-%ven un marco. Sin embargo, los flujos de acciones para productos basados ​​en el tiempo son una secuencia de cuadros. Por otro lado, el flujo de acciones 
-%para los productos interactivos podría ser una secuencia, selectiva, iterativa e impulsada por eventos\cite{aleem2016game,cartwright1996pre}.\\
+Un flujo de acciones se refiere al orden en que se muestran los marcos de los productos a los usuarios, En productos estaticos, no hay flujo de acciones, ya que los usuarios leen 
+ven un marco.\\ 
+Sin embargo, los flujos de acciones para productos basados en el tiempo son una secuencia de cuadros. Por otro lado, el flujo de acciones 
+para los productos interactivos podría ser una secuencia, selectiva, iterativa e impulsada por eventos\cite{aleem2016game,cartwright1996pre}.\\
 Los roles de los usuarios se refieren a lo que los usuarios pueden hacer para interactuar con productos multimedia. En los productos no interactivos, los usuarios son pasivos donde 
 solo pueden leer / mirar productos. Sin embargo, los usuarios son usuarios activos con productos interactivos donde pueden realizar eventos. El cuadro \ref{tab:met1}  resume los tipos de productos 
 multimedia y sus características.
@@ -294,12 +295,17 @@ multimedia y sus características.
   \textit{Productos interactivos}                                                  & Impulsado por eventos                          & \begin{tabular}[c]{@{}c@{}}Secuencia, Selectiva, Interactiva e\\  Impulsada por eventos\end{tabular} & Activo(Realiza eventos)                                \\ \hline
   \end{tabular}%
   }
-
-
-  
   \caption{Características de los productos multimedia.}
   \label{tab:met1}
   \end{table}
+
+  \subsection{Diagrama de la Metodolog\'ia}
+  \begin{figure}[H]
+  	\begin{center}
+   		\includegraphics[width = .9\textwidth]{v2/images/image26.png}
+   		\captionof{figure}{\label{fig:a2}Diagrama de la metodología de ingeniería de software multimedia}
+  	\end{center} 
+  \end{figure}
 
   \subsection{Características de la Metodología de ingeniería de software multimedia}
   \subsection{Requisitos y preproducción}
