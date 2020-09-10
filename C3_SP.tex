@@ -249,58 +249,60 @@ Realidad Virtual. Aunque las interacciones dependen eteramente del objetivo del 
 \section{Metodología}
 
 \subsection{Metodología de Ingeniería de Software Multimedia}
-Recientemente, los productos multimedia digitales, como imágenes, personajes, modelos y animaciones 2D y 3D, se han utilizado ampliamente en muchos dominios, como publicidad, 
-películas animadas, edición y diseño de publicaciones, etc. Además, el desarrollo de aplicaciones de software ha utilizado productos multimedia ampliamente. en muchos dominios, 
-como marketing electrónico, formación, entretenimiento y juegos, simulación y visualización, y aprendizaje interactivo.\\
-En el campo de la informática, la ingeniería de software es una disciplina de ingeniería bien definida que se ocupa de todos los aspectos de la producción de software desde la 
-etapa inicial de la especificación de requisitos de software hasta el mantenimiento del software desarrollado después de su implementación.\\
- Por otro lado, el diseño gráfico es un campo de arte que se ocupa de todos los aspectos de la producción multimedia. Prácticamente, la producción multimedia pasa por tres 
- etapas comunes: \textbf{preproducción, producción y postproducción}. Sin embargo, a\'un faltan investigaciones que describan estas etapas de forma explícita y estructurada. Además, la 
- descripción de las etapas de producción multimedia no se considera explícitamente en el ciclo de vida del desarrollo de software. De hecho, hay muchas investigaciones de 
- ingeniería de software que abordan productos multimedia, pero se enfocan principalmente en aspectos de modelado y cómo extender el Lenguaje de modelado unificado (UML) 
- para apoyar el modelado de productos multimedia como objetos dentro de aplicaciones de software.\\
-Por lo tanto, existe la necesidad de utilizar una metodología de ingeniería interdisciplinaria que tenga como objetivo satisfacer dos pliegues: describir explícitamente las etapas 
-de producción de productos multimedia e integrar las etapas de producción multimedia con el ciclo de vida del desarrollo de software.\cite{al2019multimedia}
 
-\subsection{Características de los Productos Multimedia}
-Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar 
-en productos estáticos  como carteles, logotipos, folletos, modelos estáticos 3D, etc., y productos basados en el tiempo. \cite{engels2002object,sauer2001uml}.\\
-Los productos multimedia interactivos son aplicaciones de software que contienen productos multimedia\cite{miranda2017diseno} (es decir, aplicaciones basadas en eventos como juegos, 
-aplicaciones web basadas en multimedia y materiales de aprendizaje multimedia basados en interactividad). La figura \ref{fig:me2} a continuación ilustra los tipos de 
-productos multimedia.\\
-\begin{figure}[H]
-	\begin{center}
- 		\includegraphics[width = 1\textwidth]{v2/images/image60.png}
- 		\captionof{figure}{\label{fig:me2}Tipos de productos multimedia}
-	\end{center} 
-\end{figure}
-Cada una de las categorías anteriores tiene un conjunto de características que pueden  clasificarse en tres dimensiones: vista externa, flujo de acciones y roles de los usuarios.\\
-La vista externa se refiere a la forma en que el usuario interactúa con el producto. En este sentido, los usuarios interactúan con productos no interactivos de una manera.\\
-Los usuarios suelen realizar eventos y la respuesta del producto a estos eventos mediante acciones.\\
-Un flujo de acciones se refiere al orden en que se muestran los marcos de los productos a los usuarios, En productos est\'aticos, no hay flujo de acciones, ya que los usuarios leen 
-ven un marco.\\ 
-Sin embargo, los flujos de acciones para productos basados en el tiempo son una secuencia de cuadros. Por otro lado, el flujo de acciones 
-para los productos interactivos podría ser una secuencia, selectiva, iterativa e impulsada por eventos\cite{aleem2016game,cartwright1996pre}.\\
-Los roles de los usuarios se refieren a lo que los usuarios pueden hacer para interactuar con productos multimedia. En los productos no interactivos, los usuarios son pasivos donde 
-solo pueden leer / mirar productos. Sin embargo, los usuarios son usuarios activos con productos interactivos donde pueden realizar eventos. El cuadro \ref{tab:met1}  resume los tipos de productos 
-multimedia y sus características.
-\begin{table}[H]
-  \resizebox{\textwidth}{!}{%
-  \begin{tabular}{|
-  >{\columncolor[HTML]{9B9B9B}}c |c|c|c|}
-  \hline
-  \cellcolor[HTML]{9B9B9B}                                                         & \multicolumn{3}{c|}{\cellcolor[HTML]{9B9B9B}\textbf{Características Multimedia}}                                                                                                                               \\ \cline{2-4} 
-  \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textbf{Tipos de productos multimedia}} & \cellcolor[HTML]{9B9B9B}\textbf{Vista Externa} & \cellcolor[HTML]{9B9B9B}\textbf{Flujo de acciones}                                                   & \cellcolor[HTML]{9B9B9B}\textbf{Roles de los Usuarios} \\ \hline
-  \textit{Productos estáticos}                                                     & Un cuadro                                      & Sin acciones                                                                                         & Pasivo (ver/leer)                                      \\ \hline
-  \textit{Productos basados en tiempo}                                             & Múltiples cuadros                              & Secuencia                                                                                            & Pasivo(mirar)                                          \\ \hline
-  \textit{Productos interactivos}                                                  & Impulsado por eventos                          & \begin{tabular}[c]{@{}c@{}}Secuencia, Selectiva, Interactiva e\\  Impulsada por eventos\end{tabular} & Activo(Realiza eventos)                                \\ \hline
-  \end{tabular}%
-  }
-  \caption{Características de los productos multimedia.}
-  \label{tab:met1}
-  \end{table}
+La ingeniería de software es una disciplina bien definida que se ocupa de todos los aspectos de la producción de software,
+desde la etapa inicial de la especificación de requisitos de software hasta el mantenimiento del software desarrollado 
+después de su implementación. De acuerdo a Al-Jabari {\it et al}\cite{al2019multimedia}, el ciclo de vida
+del desarrollo multimedia ó MDLC por sus siglas en inglés ({\it Multimedia Development Life Cycle}), consta de tres fases:
+\begin{itemize}
+ \item Pre-producción.
+ \item Producción.
+ \item Postproducción.
+\end{itemize}
 
-Tomando en cuenta la informaci\'on previamente propuesta se ha determinado que el software que se desarroll\'o cae dentro  un \textbf{Producto Interactivo} debido a las car\'acteristicas que posee. 
+En este trabajo se busca describir explícitamente las etapas de producción de productos multimedia e integrar 
+las etapas de producción multimedia con el ciclo de vida del desarrollo de software.
+
+%% TODO: Esto no va aquí, hay que moverlo a la sección de introducción.
+%\subsection{Características de los Productos Multimedia}
+%Los productos multimedia se pueden clasificar en dos categorías: productos interactivos y no interactivos. Los productos no interactivos también se pueden clasificar 
+%en productos estáticos  como carteles, logotipos, folletos, modelos estáticos 3D, etc., y productos basados en el tiempo. \cite{engels2002object,sauer2001uml}.\\
+%Los productos multimedia interactivos son aplicaciones de software que contienen productos multimedia\cite{miranda2017diseno} (es decir, aplicaciones basadas en eventos como juegos, 
+%aplicaciones web basadas en multimedia y materiales de aprendizaje multimedia basados en interactividad). La figura \ref{fig:me2} a continuación ilustra los tipos de 
+%productos multimedia.\\
+%\begin{figure}[H]
+%	\begin{center}
+% 		\includegraphics[width = 1\textwidth]{v2/images/image60.png}
+% 		\captionof{figure}{\label{fig:me2}Tipos de productos multimedia}
+%	\end{center} 
+%\end{figure}
+%Cada una de las categorías anteriores tiene un conjunto de características que pueden  clasificarse en tres dimensiones: vista externa, flujo de acciones y roles de los usuarios.\\
+%La vista externa se refiere a la forma en que el usuario interactúa con el producto. En este sentido, los usuarios interactúan con productos no interactivos de una manera.\\
+%Los usuarios suelen realizar eventos y la respuesta del producto a estos eventos mediante acciones.\\
+%Un flujo de acciones se refiere al orden en que se muestran los marcos de los productos a los usuarios, En productos est\'aticos, no hay flujo de acciones, ya que los usuarios leen 
+%ven un marco.\\ 
+%Sin embargo, los flujos de acciones para productos basados en el tiempo son una secuencia de cuadros. Por otro lado, el flujo de acciones 
+%para los productos interactivos podría ser una secuencia, selectiva, iterativa e impulsada por eventos\cite{aleem2016game,cartwright1996pre}.\\
+%Los roles de los usuarios se refieren a lo que los usuarios pueden hacer para interactuar con productos multimedia. En los productos no interactivos, los usuarios son pasivos donde 
+%solo pueden leer / mirar productos. Sin embargo, los usuarios son usuarios activos con productos interactivos donde pueden realizar eventos. El cuadro \ref{tab:met1}  resume los tipos de productos 
+%multimedia y sus características.
+%\begin{table}[H]
+%  \resizebox{\textwidth}{!}{%
+%  \begin{tabular}{|
+%  >{\columncolor[HTML]{9B9B9B}}c |c|c|c|}
+%  \hline
+%  \cellcolor[HTML]{9B9B9B}                                                         & \multicolumn{3}{c|}{\cellcolor[HTML]{9B9B9B}\textbf{Características Multimedia}}                                                                                                                               \\ \cline{2-4} 
+%  \multirow{-2}{*}{\cellcolor[HTML]{9B9B9B}\textbf{Tipos de productos multimedia}} & \cellcolor[HTML]{9B9B9B}\textbf{Vista Externa} & \cellcolor[HTML]{9B9B9B}\textbf{Flujo de acciones}                                                   & \cellcolor[HTML]{9B9B9B}\textbf{Roles de los Usuarios} \\ \hline
+ % \textit{Productos estáticos}                                                     & Un cuadro                                      & Sin acciones                                                                                         & Pasivo (ver/leer)                                      \\ \hline
+ % \textit{Productos basados en tiempo}                                             & Múltiples cuadros                              & Secuencia                                                                                            & Pasivo(mirar)                                          \\ \hline
+ % \textit{Productos interactivos}                                                  & Impulsado por eventos                          & \begin{tabular}[c]{@{}c@{}}Secuencia, Selectiva, Interactiva e\\  Impulsada por eventos\end{tabular} & Activo(Realiza eventos)                                \\ \hline
+ % \end{tabular}%
+ %}
+ % \caption{Características de los productos multimedia.}
+%  \label{tab:met1}
+%  \end{table}
+
+%Tomando en cuenta la informaci\'on previamente propuesta se ha determinado que el software que se desarroll\'o cae dentro  un \textbf{Producto Interactivo} debido a las car\'acteristicas que posee. 
 
   \subsection{Diagrama de la Metodolog\'ia}
   \begin{figure}[H]
@@ -310,114 +312,52 @@ Tomando en cuenta la informaci\'on previamente propuesta se ha determinado que e
   	\end{center} 
   \end{figure}
 
-  \subsection{Características de la Metodología de ingeniería de software multimedia}
-  \subsection{Requisitos y preproducción}
-  El objetivo de esta fase es tener muy en claro cuales son los alcances y lo que será posible que el proyecto realice. Para ello se  realizaron las siguientes actividades:\\
+\subsection{Características de la Metodología de ingeniería de software multimedia}
+
+\subsection{Requisitos y preproducción}
+En esta fase se definieron los alcances del proyecto, realizando las siguientes actividades:
+%%% TODO: La sección se llama requisitos, pero ¿dónde están los requisitos??
 
 \section{Selección de estrategia de diseño}
-Al intentar comprender y desarrollar ideas relevantes para los temas, es necesario reiterar la comprensión de sus definiciones actuales y contexto histórico.\\
-Con respecto a la realidad virtual, una de las cosas básicas a considerar es la forma en que nuestros sentidos sirven como la entrada que nuestro cerebro utiliza 
-para construir una comprensión del mundo que nos rodea. La vista, el oído, el tacto, el olfato y el gusto son el conjunto de estímulo externo más ampliamente aceptado 
-que percibe el cuerpo humano.\\
-Estos sentidos y nuestras reacciones a ellos son el resultado de milenios de selección natural y hay varias consecuencias de esto incorporadas en nuestro instinto. 
-Todo esto es un conocimiento relativamente común y parece que no es necesario reiterar aquí, pero lo importante es afirmar que nosotros, como humanos, tenemos ciertos 
-resultados predecibles basados en ciertos conjuntos de entradas. Esencialmente, es instinto, naturaleza humana.\\
-Un sitio web bien diseñado utilizará de manera similar el color, la distancia y la tipografía para comunicar claramente un propósito y, a menudo, persuadir algún tipo de acción.\\
-Para que todo esto sea efectivo, se deben implementar y descubrir principios de diseño razonables. Existen varios principios para el diseño que pueden traducirse de otros medios. 
-El diseño de impresión, el diseño web, la arquitectura, el diseño de interiores, el teatro, los gráficos en movimiento, etc., tienen elementos que pueden considerarse 
-relevantes y adoptados. \cite{web18} \\
-Al mismo tiempo, el medio de la realidad virtual como propiedades, como la capacidad de intersección del contenido, son únicas.\\
-Es por esto que el diseño de un sistema de realidad virtual presenta retos los cuales son difíciles de sobrellevar ya que se tiene que crear una experiencia para el 
-usuario en el sistema mismo lo cual conlleva a la selección de una estrategia de diseño centrada en la UX del usuario.
+Alger presenta métodos de diseño de pre-visualización\cite{web18}. %%% TODO: ¿¿Los usaste??
 
 \section{Requisitos para el Desarrollo de Software para Proveer una Experiencia de Realidad Virtual}
-La realización una experiencia de realidad alternativa es la prueba definitiva para diseñar una experiencia de usuario impecable que pueda sumergir los sentidos y 
-“engañar” a la mente para que abrace la falsa realidad. \\
-Pero crear una experiencia de realidad virtual es mucho más complejo que la producción visual 2D y 3D normal asociada con películas y videojuegos, que nos presenta 
-como desarrolladores y diseñadores un conjunto completamente nuevo de desafíos. Crear una experiencia de realidad virtual exitosa requiere que el pensamiento actual 
-sobre UX evolucione para acomodar sus capacidades y requisitos ya que es una rama la cual, frecuentemente, no es estudiada a profundidad dentro de la carrera de 
-Ingeniería en Sistemas Computacionales. 
 
 \subsection{Los cuatro núcleos del diseño UX para RV}
-Se plantean cuatro consideraciones centrales para el diseño de experiencias de realidad virtual:\\
+Se plantean cuatro consideraciones centrales para el diseño de experiencias de realidad virtual: %% TODO: ¿De dónde se tomaron?
 
-\subsection{Interactivo y Reactivo}
-La pantalla estereoscópica de visión amplia de los visores de realidad virtual, en este caso específico el Oculus Rift ®,  crea una imagen tridimensional que fomenta 
-la profundidad y la perspectiva. El software RV debe seguir constantemente los movimientos de la cabeza y los ojos del usuario, permitiendo que las imágenes se muevan 
-y cambien con cada nueva perspectiva, produciendo retroalimentación visual y creando una ilusión de sensación táctil.\\
-La experiencia es altamente interactiva y reactiva porque el diseño responde a los movimientos de un usuario y, por lo tanto, siempre está cambiando.\\
-Es por eso que una experiencia de realidad virtual se diseña a una vista de 360 grados. Cuando se está diseñando una experiencia, se debe de anticipar y dirigir cada 
-movimiento del usuario, teniendo en cuenta dónde dirigir el ojo usando la vista, el sonido se presenta dentro del sistema que está proveyendo la experiencia de realidad virtual.
+\begin{itemize}
+\item Interactivo y Reactivo. El software debe seguir los movimientos de la cabeza y los ojos del usuario. Producir 
+retroalimentación visual y creando una ilusión de sensación táctil. Debe diseñarse a 360 grados.
+\item Comodidad y Facilidad. El usuario se debe sentir cómodo durante toda la experiencia\cite{antonya2007design},
+debe tener la capacidad y la facilidad de controlar completamente su propia experiencia.
+\item Escala de texto e imagen. La percepción debe ser realista, intuitivo.
+\item Sonido. La música y los efectos de sonido de alta calidad deben fomentar la inmersión en la experiencia.
+\end{itemize}
 
-\subsection{Comodidad y Facilidad}
-La cualidad más importante para crear cualquier diseño UX exitoso, especialmente en realidad virtual, es garantizar que el usuario se sienta cómodo durante toda la experiencia\cite{antonya2007design},
- lo que le permite tener un control completo de todos los movimientos y reducir la posibilidad de cinetosis.\\
-Los cambios de brillo y los desajustes de velocidad son muy importantes. De hecho, la posibilidad de cinetosis fue un obstáculo importante para el desarrollo de la tecnología de 
-Realidad Virtual.\\
-Se debe implementar la capacidad de ver y usar controles, hacer clic en botones y otras características centradas en el diseño para evitar confundir o frustrar a los usuarios.\\
-En otras palabras, dar al usuario la capacidad y la facilidad de controlar completamente su propia experiencia. Esa es la capacidad del sistema realidad virtual en el cual se 
-intenta proveer la capacidad de experimentar completamente un mundo diferente y controlar cada uno de los movimientos del usuario dentro de ese mundo.
-
-\subsection{Escala de texto e imagen}
-La percepción actual de software realizado en realidad virtual es que este es "realista". Esto esencialmente está tratando de crear una experiencia que envuelve completamente al usuario.\\
-Los detalles importan en el diseño de los sistemas, especialmente uno que sea lo suficientemente intuitivo para requerir la mínima curva de aprendizaje para el usuario.\\
-Todas las imágenes deben ser claras y fácilmente legibles, evitando la fatiga visual y teniendo en cuenta la perspectiva. Agregar más y más detalles a un objeto a medida 
-que el usuario se acerca a él ayudará a establecer una profundidad realista (y viceversa). El usuario notará mejor el texto grande, en negrita y colorido.
-
-\subsection{Sonido}
-La música y los efectos de sonido de alta calidad son una característica fundamental para fomentar la inmersión en la experiencia.\\
-Mediante la implementación de 3D efectos de audio a RV audio posicional, el usuario sabrá la dirección en la que ciertos sonidos son originados en relación a donde están, 
-o el audio podría ser hecho a sonar como es proveniente de todo tipo de direcciones, dando al usuario la ilusión de estar en medio de un entorno particular.\\
-Dar a los usuarios un control de volumen también puede ser una buena idea para ayudar al usuario a encontrar un rango cómodo, aunque estos no son esenciales dentro del sistema.
-
-\section{Retos de Realidad Virtual para Anticipar}
-A medida que los diseñadores y desarrolladores se sumergen más en la realidad virtual, este tipo de experiencia relativamente desconocida seguramente se utilizará de formas que 
-aún no se han considerado y, por lo tanto, se tendrán desafíos y beneficios que aún no se han descubierto. Sin embargo, pruebas realizadas por usuarios\cite{web19} han traído a la 
-superficie desafíos de diseño actuales.\\
-Si bien el objetivo de una experiencia de realidad virtual efectiva y placentera se logra utilizando los principios fundamentales de UX, crear realidad virtual es más fácil 
-decirlo que hacerlo.\\
-Al realizar el diseño se procura minimizar diligentemente las frustraciones y la confusión de los usuarios al agrupar los detalles y la funcionalidad del usuario en cada 
-centímetro del diseño reactivo.
-
-\subsection{Crear un Entorno que se Vea y se Sienta Real}
-No ignorar ningún detalle y siempre dé a los usuarios un control completo. Un sistema de realidad virtual es altamente interactivo de 360 grados debe parecer tan realista que los 
-usuarios olviden que es realidad virtual. \\
-Ofrecer al usuario la capacidad de interactuar de todas las formas posibles, incluida la capacidad de tocar, levantar y lanzar todo tipo de objetos.
-
-\subsection{Asegurar que los Usuarios no Sufran Cinetosis}
-La cinetosis ocurre cuando las señales de movimiento físicas y visuales le dan al usuario información adversa. Las claves para evitar que los usuarios se enfermen por el movimiento 
-mientras usan un sistema de realidad virtual son el seguimiento efectivo de la cabeza, que mantiene algunos objetos en posiciones fijas sin importar el movimiento del usuario.\\
-Además, mantener una velocidad de fotogramas alta y nunca perder fotogramas. Otras formas de combatir la enfermedad de la simulación es minimizar el movimiento de la periferia 
-en el diseño y no intentar acelerar al usuario (también conocido como: no simular cambios en la velocidad).
-
-\subsection{Desarrollar controles y menús fáciles de usar}
-Este es un desafío en el que los diseñadores todavía están trabajando y se ha diseñado de la mejor forma posible tomando en cuenta diferentes estrategias y modelos de diseño.\\
-Dado que los menús de navegación y otros controles no se pueden colocar en las esquinas de la pantalla, ya que en un sistema de realidad virtual, no hay esquinas o puntos finales 
-para su vista, deben permanecer fácilmente accesibles y fáciles de usar.\\
-Algunos juegos de realidad virtual colocan los controles en las manos de realidad virtual del usuario y la navegación del menú se realiza con la cabeza.\\
-Sea lo más creativo posible con la experimentación, pero si los controles y los menús son difíciles de operar o encontrar, lo más probable es que su diseño de RV no reciba un gran 
-reconocimiento de los usuarios. Un tutorial rápido antes de la experiencia puede ayudar a bordo del usuario para evitar la frustración o realizarlos lo mas intuitivos
-posibles a lo que se est\'a acostumbrado en interacciones humanas con software en la vida real.
-
-\subsection{Mantener al usuario seguro}
-Si bien los usuarios explorarán nuevos espacios, la realidad física es que el cuerpo del usuario todavía está atrapado dentro de una sala de la habitación donde se instale el sistema 
-de realidad virtual.\\
-Se tiene que asegurarse de que la experiencia de realidad virtual no representa serias amenazas de seguridad para los usuarios.\\
-Hacer que funcione para los usuarios. Es importante tener en cuenta las diferentes alturas y tamaños de las personas. No colocar artículos críticos fuera del alcance de usuarios con 
-una altura diferente. Además, se debe de tener en cuenta las diferentes preferencias y desventajas físicas al crear varios modos y permitir que los usuarios se sienten mientras visitan 
-una realidad alternativa.
+De estos cuatro núcleos, el sistema que se desarrolló cumple con ......... %% TODO: 
 
 \section{Diseño y Desarrollo de Componentes Multimedia}
-El diseño de los modelos de los \'organos fue realizado basado en el material del cual se realiz\'o la investigación en la sección \ref{mod3d} con el método de
-Modelado de Contorno ya que este nos permite reducir la carga de trabajo del motor de Unity, así como el de la tarjeta gráfica.\\
+El diseño de los modelos de los órganos se realizó con el método de Modelado de Contorno para reducir
+la carga del motor gráfico.  Se usó el material de la sección \ref{mod3d}, 
+%% TODO: Agregar la referencia donde se pueda consultar este método.
 
-\subsection{Modelos 3D de los \'Organos}
-Los componentes multimedia desarrollados son modelos 3D los cuales son miembros del sistema digestivo del ser humano, 
-el sistema digestivo incluye a los órganos del tubo alimenticio y glándulas de secreción exocrina y endocrina.\\
+\subsection{Modelos 3D de los órganos}
+Los componentes multimedia desarrollados son nueve modelos 3D de elementos del sistema digestivo del ser humano, y 
+un módelo general que los reune. Los nueve modelos 3D son: 
 
-\subsection{Glándulas Salivales}
-A continuación se muestran las figuras del resultado final del desarrollo de las glándulas salivales del sistema digestivo 
- en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
+\begin{itemize} %% TODO: Agregar referencias a las imágenes.
+\item Glándulas salivales.
+\item Cavidad oral y faringe.
+\item Esófago.
+\item Estómago.
+\item Intestino delgado.
+\item Hígado.
+\item Páncreas.
+\item Vesícula biliar.
+\item Intestino grueso y ano.
+\end{itemize}
+
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image41.png}
@@ -425,8 +365,6 @@ A continuación se muestran las figuras del resultado final del desarrollo de la
 	\end{center} 
 \end{figure}
 
-\subsection{Cavidad oral y faringe}
-A continuación se muestran las figuras del resultado final del desarrollo de la cavidad oral del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image14.png}
@@ -434,8 +372,6 @@ A continuación se muestran las figuras del resultado final del desarrollo de la
 	\end{center} 
 \end{figure}
 
-\subsection{Esófago}
-A continuación se muestran las figuras del resultado final del desarrollo del esófago del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image25.png}
@@ -443,8 +379,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del e
 	\end{center} 
 \end{figure}
 
-\subsection{Estómago}
-A continuación se muestran las figuras del resultado final del desarrollo del estómago del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image42.png}
@@ -452,8 +386,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del e
 	\end{center} 
 \end{figure}
 
-\subsection{Intestino delgado}
-A continuación se muestran las figuras del resultado final del desarrollo del intestino delgado del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image69.png}
@@ -461,8 +393,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del i
 	\end{center} 
 \end{figure}
 
-\subsection{Hígado}
-A continuación se muestran las figuras del resultado final del desarrollo del hígado del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image17.png}
@@ -470,8 +400,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del h
 	\end{center} 
 \end{figure}
 
-\subsection{Páncreas}
-A continuación se muestran las figuras del resultado final del desarrollo del páncreas del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image19.png}
@@ -479,8 +407,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del p
 	\end{center} 
 \end{figure}
 
-\subsection{Vesícula Biliar}
-A continuación se muestran las figuras del resultado final del desarrollo de la vesícula biliar del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image26.png}
@@ -488,8 +414,6 @@ A continuación se muestran las figuras del resultado final del desarrollo de la
 	\end{center} 
 \end{figure}
 
-\subsection{Intestino Grueso y Ano}
-A continuación se muestran las figuras del resultado final del desarrollo del intestino grueso y ano del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado basado en el material anteriormente provisto.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = .5\textwidth]{source/images/image20.png}
@@ -497,8 +421,6 @@ A continuación se muestran las figuras del resultado final del desarrollo del i
 	\end{center} 
 \end{figure}
 
-\section{Modelo del sistema digestivo unificado}
-A continuación se muestran las figuras del resultado final del desarrollo del sistema digestivo en el software de modelado en 3D llamado “Blender”, este fue realizado reuniendo todos los modelos de órganos y elementos individuales creados con anterioridad.\\
 \begin{figure}[H]
 	\begin{center}
  		\includegraphics[width = 1\textwidth]{source/images/image24.png}
